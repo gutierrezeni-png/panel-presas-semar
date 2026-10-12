@@ -109,6 +109,13 @@
 <meta name="apple-mobile-web-app-title" content="PRESAS_EIOS_RN10">
 </head>
 <body>
+<div id="estado-actualizacion" style="max-width:1400px;margin:8px auto 4px;
+  background:#eef4f8;border:1px solid #c8d3dc;border-radius:8px;padding:8px 14px;
+  font:15px Arial,sans-serif;color:#234;text-align:center">
+  Panel generado: <b>12/10/2026 12:20</b> &nbsp;·&nbsp; Revisado: <b id="hora-revision">--</b>
+  &nbsp;·&nbsp; se actualiza cada 10 min
+</div>
+
 <div class="contenedor">
   <h1>🚦 Panel de Presas — Semáforo de Alerta</h1>
   <div class="nota-fecha">Reporte del 11 al 12 de octubre de 2026</div>
@@ -140,12 +147,6 @@
   </div>
 </div>
 <!-- AUTORECARGA_PANEL -->
-<div id="estado-actualizacion" style="position:fixed;right:12px;bottom:12px;z-index:9999;
-  background:rgba(255,255,255,.95);border:1px solid #c8d3dc;border-radius:8px;
-  padding:6px 10px;font:12px Arial,sans-serif;color:#334;box-shadow:0 1px 4px rgba(0,0,0,.15)">
-  Panel generado: <b>12/10/2026 12:14</b><br>
-  Revisado: <b id="hora-revision">--</b> · se actualiza cada 10 min
-</div>
 <script>
 /* Recarga automática del panel mientras está abierto (agregado por
    actualizar_todo.py). Conserva la posición de la página al recargar y
