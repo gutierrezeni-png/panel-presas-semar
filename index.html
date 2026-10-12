@@ -137,5 +137,22 @@
     reciente ahora mismo, presiona F5.
   </div>
 </div>
+<!-- AUTORECARGA_PANEL -->
+<script>
+/* Recarga automática del panel mientras está abierto (agregado por
+   actualizar_todo.py). Conserva la posición de la página al recargar y
+   evita que el navegador muestre una copia vieja guardada en caché. */
+(function () {
+  var MINUTOS = 10;
+  try {
+    var y = sessionStorage.getItem('panel_presas_scroll');
+    if (y !== null) { window.addEventListener('load', function () { window.scrollTo(0, parseInt(y, 10)); }); }
+  } catch (e) {}
+  setTimeout(function () {
+    try { sessionStorage.setItem('panel_presas_scroll', String(window.scrollY)); } catch (e) {}
+    location.replace(location.pathname + '?t=' + Date.now() + location.hash);
+  }, MINUTOS * 60 * 1000);
+})();
+</script>
 </body>
 </html>
