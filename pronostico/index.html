@@ -494,8 +494,13 @@ function dibujarRosaViento(direccionDeg, velocidad) {
     ${flecha}
     <circle cx="${cx}" cy="${cy}" r="4" fill="#EAF2F5"/>
   `;
+  // La flecha apunta hacia DE DÓNDE viene el viento (convención meteorológica,
+  // igual que "Wind: 18 knots N" en Weatherlink). Se agrega el texto para
+  // que no haya confusión al leerla.
   document.getElementById('velocidad-bajo-compas').innerHTML =
-    velocidad !== null && !isNaN(velocidad) ? formatoViento(velocidad) : '—';
+    velocidad !== null && !isNaN(velocidad)
+      ? `Del ${direccionATexto(direccionDeg)} · ${formatoViento(velocidad)}`
+      : '—';
 }
 
 function dibujarGrafico72h(registros) {
