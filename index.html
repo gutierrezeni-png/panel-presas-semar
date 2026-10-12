@@ -138,12 +138,21 @@
   </div>
 </div>
 <!-- AUTORECARGA_PANEL -->
+<div id="estado-actualizacion" style="position:fixed;right:12px;bottom:12px;z-index:9999;
+  background:rgba(255,255,255,.95);border:1px solid #c8d3dc;border-radius:8px;
+  padding:6px 10px;font:12px Arial,sans-serif;color:#334;box-shadow:0 1px 4px rgba(0,0,0,.15)">
+  Panel generado: <b>12/10/2026 10:21</b><br>
+  Revisado: <b id="hora-revision">--</b> · se actualiza cada 10 min
+</div>
 <script>
 /* Recarga automática del panel mientras está abierto (agregado por
    actualizar_todo.py). Conserva la posición de la página al recargar y
    evita que el navegador muestre una copia vieja guardada en caché. */
 (function () {
   var MINUTOS = 10;
+  var ahora = new Date();
+  var el = document.getElementById('hora-revision');
+  if (el) el.textContent = ahora.toLocaleTimeString('es-MX', {hour: '2-digit', minute: '2-digit'});
   try {
     var y = sessionStorage.getItem('panel_presas_scroll');
     if (y !== null) { window.addEventListener('load', function () { window.scrollTo(0, parseInt(y, 10)); }); }
