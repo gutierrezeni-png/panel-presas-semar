@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pronóstico Golfo de Tehuantepec</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+  :root {
+    --bg-deep: #0B1E2D;
+    --bg-panel: #142F42;
+    --bg-panel-raised: #1B3A50;
+    --line: #2A4A62;
+    --text: #EAF2F5;
+    --text-dim: #8FA9B8;
+    --wind: #3FB8AF;
+    --wind-glow: rgba(63, 184, 175, 0.35);
+    --gust: #E8A33D;
+    --danger: #E0654F;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: radial-gradient(ellipse at top, #0F2536 0%, var(--bg-deep) 60%);
+    color: var(--text);
+    font-family: 'Space Grotesk', sans-serif;
+    min-height: 100vh;
+    padding: 24px 16px 60px;
+  }
+
+  .num {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 14px;
+    margin-bottom: 22px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  header h1 {
+    font-size: 1.05rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--text-dim);
+  }
+
+  header h1 b {
+    color: var(--text);
+    font-weight: 700;
+  }
+
+  #estado-gps {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .punto-gps {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: var(--text-dim);
+    transition: background 0.4s;
+  }
+
+  .punto-gps.activo { background: var(--wind); box-shadow: 0 0 8px var(--wind-glow); }
+  .punto-gps.error { background: var(--danger); }
+
+  .selector-estacion {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+
+  .selector-estacion button {
+    flex: 1;
+    background: var(--bg-panel);
+    border: 1px solid var(--line);
+    color: var(--text-dim);
+    padding: 10px 12px;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: left;
+  }
+
+  .selector-estacion button.activa {
+    border-color: var(--wind);
+    color: var(--text);
+    background: var(--bg-panel-raised);
+  }
+
+  .selector-estacion button .distancia {
+    display: block;
+    font-size: 0.72rem;
+    color: var(--text-dim);
+    margin-top: 2px;
+  }
+
+  .panel-principal {
+    background: var(--bg-panel);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 28px 24px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 24px;
+    align-items: center;
+  }
+
+  @media (max-width: 520px) {
+    .panel-principal { grid-template-columns: 1fr; justify-items: center; text-align: center; }
+  }
+
+  .rosa-viento { width: 180px; height: 180px; }
+
+  .compas-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .velocidad-bajo-compas {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .lecturas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 24px;
+  }
+
+  .lectura .etiqueta {
+    font-size: 0.7rem;
+    color: var(--text-dim);
+    margin-bottom: 3px;
+  }
+
+  .lectura .valor {
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 1;
+  }
+
+  .lectura .valor .unidad {
+    font-size: 0.9rem;
+    color: var(--text-dim);
+    font-weight: 400;
+    margin-left: 3px;
+  }
+
+  .lectura .valor .unidad-secundaria {
+    font-size: 0.65rem;
+    color: var(--text-dim);
+    font-weight: 400;
+  }
+
+  .lectura.viento .valor,
+  .lectura.racha .valor {
+    font-size: 1.15rem;
+  }
+
+  .lectura.viento .valor { color: var(--wind); }
+  .lectura.racha .valor { color: var(--gust); }
+  .lectura.lluvia .valor { color: #6FB8E0; }
+
+  .nota-sin-corregir {
+    font-size: 0.62rem;
+    color: var(--text-dim);
+    opacity: 0.75;
+  }
+
+  .seccion-titulo {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    margin: 28px 0 12px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .grafico-caja {
+    background: var(--bg-panel);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  svg text { font-family: 'JetBrains Mono', monospace; fill: var(--text-dim); }
+
+  .linea-temp { fill: none; stroke: #E8A33D; stroke-width: 2; }
+  .linea-viento { fill: none; stroke: var(--wind); stroke-width: 2; }
+
+  .leyenda-grafico {
+    display: flex;
+    gap: 18px;
+    font-size: 0.75rem;
+    color: var(--text-dim);
+    margin-top: 10px;
+  }
+
+  .leyenda-item { display: flex; align-items: center; gap: 6px; }
+  .leyenda-punto { width: 8px; height: 8px; border-radius: 50%; }
+
+  .tabla-caja {
+    background: var(--bg-panel);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 4px 0;
+    position: relative;
+  }
+
+  .tabla-scroll {
+    overflow-x: auto;
+  }
+
+  .tabla-caja::after {
+    content: '';
+    position: absolute;
+    top: 1px; right: 1px; bottom: 1px;
+    width: 28px;
+    background: linear-gradient(to right, transparent, var(--bg-panel));
+    border-radius: 0 10px 10px 0;
+    pointer-events: none;
+  }
+
+  table.tabla-pronostico {
+    width: 100%;
+    min-width: 560px;
+    border-collapse: collapse;
+    font-size: 0.82rem;
+  }
+
+  table.tabla-pronostico th {
+    text-align: right;
+    font-weight: 500;
+    color: var(--text-dim);
+    font-size: 0.7rem;
+    padding: 10px 14px 8px;
+    white-space: nowrap;
+  }
+
+  table.tabla-pronostico th:first-child,
+  table.tabla-pronostico td:first-child {
+    text-align: left;
+  }
+
+  table.tabla-pronostico td {
+    text-align: right;
+    padding: 7px 14px;
+    border-top: 1px solid var(--line);
+    white-space: nowrap;
+  }
+
+  table.tabla-pronostico td.dir-viento {
+    color: var(--wind);
+  }
+
+  table.tabla-pronostico td.col-racha {
+    color: var(--gust);
+  }
+
+  table.tabla-pronostico td.col-lluvia {
+    color: #6FB8E0;
+  }
+
+  .nota-tabla {
+    font-size: 0.68rem;
+    color: var(--text-dim);
+    padding: 8px 14px 4px;
+  }
+
+  table.tabla-pronostico tr.fila-actual td {
+    background: var(--bg-panel-raised);
+    font-weight: 600;
+  }
+
+  footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 0.72rem;
+    margin-top: 30px;
+  }
+
+  #sin-datos {
+    background: var(--bg-panel);
+    border: 1px dashed var(--line);
+    border-radius: 10px;
+    padding: 32px 20px;
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    display: none;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1><b>Golfo de Tehuantepec</b> · pronóstico corregido</h1>
+    <div id="estado-gps"><span class="punto-gps" id="punto-gps"></span><span id="texto-gps">Ubicándote…</span></div>
+  </header>
+
+  <div class="selector-estacion" id="selector-estacion"></div>
+
+  <div id="sin-datos">No hay datos de pronóstico cargados. Corre <code>generar_datos_app.py</code> en la carpeta del proyecto y vuelve a abrir esta página.</div>
+
+  <div id="contenido" style="display:none;">
+    <div class="panel-principal">
+      <div class="compas-contenedor">
+        <svg class="rosa-viento" id="rosa-viento" viewBox="-8 -8 216 216"></svg>
+        <div class="velocidad-bajo-compas num" id="velocidad-bajo-compas">—</div>
+      </div>
+      <div class="lecturas">
+        <div class="lectura"><div class="etiqueta">Temperatura</div><div class="valor num" id="lectura-temp">—<span class="unidad">°C</span></div></div>
+        <div class="lectura"><div class="etiqueta">Humedad</div><div class="valor num" id="lectura-humedad">—<span class="unidad">%</span></div></div>
+        <div class="lectura viento"><div class="etiqueta">Viento</div><div class="valor num" id="lectura-viento">—</div></div>
+        <div class="lectura racha"><div class="etiqueta">Racha</div><div class="valor num" id="lectura-racha">—</div></div>
+        <div class="lectura"><div class="etiqueta">Presión</div><div class="valor num" id="lectura-presion">—<span class="unidad">hPa</span></div></div>
+        <div class="lectura lluvia"><div class="etiqueta">Lluvia <span class="nota-sin-corregir">(sin corregir)</span></div><div class="valor num" id="lectura-lluvia">—<span class="unidad">mm/h</span></div></div>
+        <div class="lectura"><div class="etiqueta">Válido</div><div class="valor num" id="lectura-tiempo" style="font-size:1rem;">—</div></div>
+      </div>
+    </div>
+
+    <div class="seccion-titulo"><span>Próximas 72 horas</span></div>
+    <div class="grafico-caja">
+      <svg id="grafico-72h" viewBox="0 0 640 220" width="100%"></svg>
+      <div class="leyenda-grafico">
+        <div class="leyenda-item"><span class="leyenda-punto" style="background:#E8A33D"></span>Temperatura (°C)</div>
+        <div class="leyenda-item"><span class="leyenda-punto" style="background:#3FB8AF"></span>Viento (km/h)</div>
+      </div>
+    </div>
+
+    <div class="seccion-titulo"><span>Detalle por horizonte</span></div>
+    <div class="tabla-caja">
+      <div class="tabla-scroll">
+        <table class="tabla-pronostico" id="tabla-pronostico"></table>
+      </div>
+    </div>
+    <div class="nota-tabla">* Lluvia sin corrección de sesgo todavía (pendiente de más datos históricos de GFS)</div>
+  </div>
+
+  <footer>Corrección de sesgo aplicada sobre pronóstico GFS · datos calibrados con estaciones EIO Salina Cruz y San Dionisio del Mar</footer>
+</div>
+
+<script src="pronostico_datos.js" onerror="mostrarSinDatos()"></script>
+<script>
+let estacionActiva = null;
+let estacionesDisponibles = [];
+
+function mostrarSinDatos() {
+  document.getElementById('sin-datos').style.display = 'block';
+  document.getElementById('contenido').style.display = 'none';
+  document.getElementById('selector-estacion').style.display = 'none';
+}
+
+function msAKmh(v) { return v * 3.6; }
+function msANudos(v) { return v * 1.943844; }
+function formatoViento(valorMs) {
+  if (valorMs === null || valorMs === undefined) return '—';
+  return `${msAKmh(valorMs).toFixed(0)} <span class="unidad-secundaria">km/h</span> · ${msANudos(valorMs).toFixed(0)} <span class="unidad-secundaria">kt</span>`;
+}
+
+function direccionATexto(deg) {
+  if (deg === null || deg === undefined || isNaN(deg)) return '—';
+  const puntos = ['N','NNE','NE','ENE','E','ESE','SE','SSE','S','SSO','SO','OSO','O','ONO','NO','NNO'];
+  const idx = Math.round(deg / 22.5) % 16;
+  return puntos[idx];
+}
+
+function construirTablaPronostico(registros, indiceActual = 0) {
+  const tabla = document.getElementById('tabla-pronostico');
+  let filas = `
+    <tr>
+      <th>Hora</th>
+      <th>Temp.</th>
+      <th>Humedad</th>
+      <th>Viento</th>
+      <th>Dir.</th>
+      <th>Racha</th>
+      <th>Presión</th>
+      <th>Lluvia*</th>
+    </tr>
+  `;
+
+  registros.forEach((r, i) => {
+    const fecha = new Date(r.tiempo);
+    const etiquetaHora = fecha.toLocaleString('es-MX', { weekday: 'short', hour: '2-digit', minute: '2-digit', timeZone: ZONA_HORARIA });
+    const vientoKmh = r.viento_ms !== null ? msAKmh(r.viento_ms).toFixed(0) : '—';
+    const rachaKmh = r.racha_ms !== null ? msAKmh(r.racha_ms).toFixed(0) : '—';
+    const lluvia = r.precip_mm !== null && r.precip_mm !== undefined ? r.precip_mm : 0;
+
+    filas += `
+      <tr class="${i === indiceActual ? 'fila-actual' : ''}">
+        <td>+${r.horizonte_h}h · ${etiquetaHora}</td>
+        <td>${r.temp_c ?? '—'}°C</td>
+        <td>${r.humedad_pct ?? '—'}%</td>
+        <td>${vientoKmh} km/h</td>
+        <td class="dir-viento">${direccionATexto(r.viento_dir_deg)}</td>
+        <td class="col-racha">${rachaKmh} km/h</td>
+        <td>${r.presion_hpa ?? '—'} hPa</td>
+        <td class="col-lluvia">${lluvia} mm</td>
+      </tr>
+    `;
+  });
+
+  tabla.innerHTML = filas;
+}
+
+function distanciaKm(lat1, lon1, lat2, lon2) {
+  const R = 6371;
+  const dLat = (lat2 - lat1) * Math.PI / 180;
+  const dLon = (lon2 - lon1) * Math.PI / 180;
+  const a = Math.sin(dLat/2)**2 + Math.cos(lat1*Math.PI/180)*Math.cos(lat2*Math.PI/180)*Math.sin(dLon/2)**2;
+  return R * 2 * Math.asin(Math.sqrt(a));
+}
+
+function construirSelector(distancias) {
+  const cont = document.getElementById('selector-estacion');
+  cont.innerHTML = '';
+  estacionesDisponibles.forEach(clave => {
+    const est = PRONOSTICOS[clave];
+    const btn = document.createElement('button');
+    btn.className = clave === estacionActiva ? 'activa' : '';
+    const dist = distancias ? distancias[clave] : null;
+    btn.innerHTML = `${est.nombre}` + (dist !== null && dist !== undefined ? `<span class="distancia">${dist.toFixed(1)} km de ti</span>` : '<span class="distancia">seleccionar manualmente</span>');
+    btn.onclick = () => { estacionActiva = clave; renderTodo(); construirSelector(distancias); };
+    cont.appendChild(btn);
+  });
+}
+
+function dibujarRosaViento(direccionDeg, velocidad) {
+  const svg = document.getElementById('rosa-viento');
+  const cx = 100, cy = 100, r = 85;
+  let marcas = '';
+  for (let i = 0; i < 360; i += 30) {
+    const rad = (i - 90) * Math.PI / 180;
+    const x1 = cx + Math.cos(rad) * (r - 6);
+    const y1 = cy + Math.sin(rad) * (r - 6);
+    const x2 = cx + Math.cos(rad) * r;
+    const y2 = cy + Math.sin(rad) * r;
+    marcas += `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#2A4A62" stroke-width="2"/>`;
+  }
+  let etiquetas = '';
+  const posiciones = [[cx, cy - r - 12, 'N'], [cx + r + 12, cy, 'E'], [cx, cy + r + 16, 'S'], [cx - r - 12, cy, 'O']];
+  posiciones.forEach(([x, y, t]) => {
+    etiquetas += `<text x="${x}" y="${y}" font-size="13" font-weight="700" text-anchor="middle">${t}</text>`;
+  });
+
+  const radFlecha = (direccionDeg - 90) * Math.PI / 180;
+  const largo = 55;
+  const puntaX = cx + Math.cos(radFlecha) * largo;
+  const puntaY = cy + Math.sin(radFlecha) * largo;
+  const colaX = cx - Math.cos(radFlecha) * (largo * 0.4);
+  const colaY = cy - Math.sin(radFlecha) * (largo * 0.4);
+
+  const perpAng = radFlecha + Math.PI / 2;
+  const anchoPunta = 8;
+  const baseX1 = puntaX - Math.cos(radFlecha) * 16 + Math.cos(perpAng) * anchoPunta;
+  const baseY1 = puntaY - Math.sin(radFlecha) * 16 + Math.sin(perpAng) * anchoPunta;
+  const baseX2 = puntaX - Math.cos(radFlecha) * 16 - Math.cos(perpAng) * anchoPunta;
+  const baseY2 = puntaY - Math.sin(radFlecha) * 16 - Math.sin(perpAng) * anchoPunta;
+
+  const flecha = `
+    <line x1="${colaX}" y1="${colaY}" x2="${puntaX}" y2="${puntaY}" stroke="#3FB8AF" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="${puntaX},${puntaY} ${baseX1},${baseY1} ${baseX2},${baseY2}" fill="#3FB8AF"/>
+  `;
+
+  svg.innerHTML = `
+    <circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="#2A4A62" stroke-width="1.5"/>
+    <circle cx="${cx}" cy="${cy}" r="${r-30}" fill="none" stroke="#1B3A50" stroke-width="1"/>
+    ${marcas}
+    ${etiquetas}
+    ${flecha}
+    <circle cx="${cx}" cy="${cy}" r="4" fill="#EAF2F5"/>
+  `;
+  document.getElementById('velocidad-bajo-compas').innerHTML =
+    velocidad !== null && !isNaN(velocidad) ? formatoViento(velocidad) : '—';
+}
+
+function dibujarGrafico72h(registros) {
+  const svg = document.getElementById('grafico-72h');
+  const w = 640, h = 220, padL = 40, padR = 40, padT = 15, padB = 25;
+  const anchoUtil = w - padL - padR;
+  const altoUtil = h - padT - padB;
+
+  const temps = registros.map(r => r.temp_c).filter(v => v !== null);
+  const vientosKmh = registros.map(r => r.viento_ms !== null ? msAKmh(r.viento_ms) : null).filter(v => v !== null);
+  const tMin = Math.min(...temps) - 2, tMax = Math.max(...temps) + 2;
+  const vMin = 0, vMax = Math.max(...vientosKmh) + 5;
+
+  const x = i => padL + (i / (registros.length - 1)) * anchoUtil;
+  const yTemp = v => padT + altoUtil - ((v - tMin) / (tMax - tMin)) * altoUtil;
+  const yViento = v => padT + altoUtil - ((v - vMin) / (vMax - vMin)) * altoUtil;
+
+  let pathTemp = '', pathViento = '';
+  registros.forEach((r, i) => {
+    const cmd = i === 0 ? 'M' : 'L';
+    if (r.temp_c !== null) pathTemp += `${cmd}${x(i).toFixed(1)},${yTemp(r.temp_c).toFixed(1)} `;
+    if (r.viento_ms !== null) pathViento += `${cmd}${x(i).toFixed(1)},${yViento(msAKmh(r.viento_ms)).toFixed(1)} `;
+  });
+
+  let ejeX = '';
+  // Con datos por hora (73 puntos) se etiqueza cada 6 horas para que
+  // no se amontonen los textos del eje.
+  registros.forEach((r, i) => {
+    if (r.horizonte_h % 6 === 0) {
+      ejeX += `<text x="${x(i).toFixed(1)}" y="${h - 6}" font-size="9" text-anchor="middle">+${r.horizonte_h}h</text>`;
+    }
+  });
+
+  svg.innerHTML = `
+    <line x1="${padL}" y1="${padT}" x2="${padL}" y2="${h - padB}" stroke="#2A4A62"/>
+    <line x1="${padL}" y1="${h - padB}" x2="${w - padR}" y2="${h - padB}" stroke="#2A4A62"/>
+    <path d="${pathTemp}" class="linea-temp"/>
+    <path d="${pathViento}" class="linea-viento"/>
+    ${ejeX}
+  `;
+}
+
+// Hora local del Istmo (Oaxaca: UTC-6 todo el año, sin horario de verano
+// desde 2022). Los datos vienen en UTC y aquí se muestran en hora local.
+const ZONA_HORARIA = 'America/Mexico_City';
+
+function indiceHoraActual(registros) {
+  const ahora = Date.now();
+  let mejor = 0, menorDiferencia = Infinity;
+  registros.forEach((r, i) => {
+    const diferencia = Math.abs(new Date(r.tiempo).getTime() - ahora);
+    if (diferencia < menorDiferencia) { menorDiferencia = diferencia; mejor = i; }
+  });
+  return mejor;
+}
+
+function renderTodo() {
+  if (!estacionActiva || !PRONOSTICOS[estacionActiva]) return;
+  const est = PRONOSTICOS[estacionActiva];
+  // La lectura "actual" es la hora del pronóstico más cercana a este
+  // momento, no la primera fila (la primera es el inicio de la corrida del
+  // GFS, que suele tener varias horas de antigüedad).
+  const idxActual = indiceHoraActual(est.pronostico);
+  const actual = est.pronostico[idxActual];
+  if (!actual) return;
+
+  document.getElementById('lectura-temp').innerHTML = (actual.temp_c ?? '—') + '<span class="unidad">°C</span>';
+  document.getElementById('lectura-humedad').innerHTML = (actual.humedad_pct ?? '—') + '<span class="unidad">%</span>';
+  document.getElementById('lectura-viento').innerHTML = formatoViento(actual.viento_ms);
+  document.getElementById('lectura-racha').innerHTML = formatoViento(actual.racha_ms);
+  document.getElementById('lectura-presion').innerHTML = (actual.presion_hpa ?? '—') + '<span class="unidad">hPa</span>';
+  document.getElementById('lectura-lluvia').innerHTML = (actual.precip_mm ?? '0') + '<span class="unidad">mm/h</span>';
+  const fecha = new Date(actual.tiempo);
+  document.getElementById('lectura-tiempo').textContent = fecha.toLocaleString('es-MX', { day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit', timeZone: ZONA_HORARIA }) + ' (hora local)';
+
+  dibujarRosaViento(actual.viento_dir_deg ?? 0, actual.viento_ms ?? 0);
+  dibujarGrafico72h(est.pronostico);
+  construirTablaPronostico(est.pronostico, idxActual);
+
+  document.getElementById('sin-datos').style.display = 'none';
+  document.getElementById('contenido').style.display = 'block';
+}
+
+function iniciar() {
+  if (typeof PRONOSTICOS === 'undefined') { mostrarSinDatos(); return; }
+  estacionesDisponibles = Object.keys(PRONOSTICOS);
+  if (estacionesDisponibles.length === 0) { mostrarSinDatos(); return; }
+
+  estacionActiva = estacionesDisponibles[0];
+  construirSelector(null);
+  renderTodo();
+
+  const punto = document.getElementById('punto-gps');
+  const texto = document.getElementById('texto-gps');
+
+  if (!navigator.geolocation) {
+    texto.textContent = 'GPS no disponible en este navegador';
+    punto.classList.add('error');
+    return;
+  }
+
+  navigator.geolocation.getCurrentPosition(
+    pos => {
+      const { latitude, longitude } = pos.coords;
+      const distancias = {};
+      estacionesDisponibles.forEach(clave => {
+        const est = PRONOSTICOS[clave];
+        distancias[clave] = distanciaKm(latitude, longitude, est.lat, est.lon);
+      });
+      const masCercana = estacionesDisponibles.reduce((a, b) => distancias[a] < distancias[b] ? a : b);
+      estacionActiva = masCercana;
+      punto.classList.add('activo');
+      texto.textContent = 'Ubicación detectada';
+      construirSelector(distancias);
+      renderTodo();
+    },
+    err => {
+      punto.classList.add('error');
+      texto.textContent = 'Ubicación no disponible — elige una estación manualmente';
+    },
+    { timeout: 8000 }
+  );
+}
+
+iniciar();
+
+// ===== Actualización automática mientras la app está abierta =====
+// Cada 5 minutos: mueve la lectura principal y la fila resaltada a la hora actual.
+// Cada 15 minutos: vuelve a leer pronostico_datos.js (que la tarea programada
+// regenera 4 veces al día) sin recargar la página, así se conserva la
+// estación elegida. Si el archivo justo se está escribiendo y falla la
+// lectura, se queda con los datos anteriores y lo reintenta en la siguiente vuelta.
+const MINUTOS_REFRESCO_HORA = 5;
+const MINUTOS_RECARGA_DATOS = 15;
+
+function recargarDatos() {
+  const anterior = document.getElementById('script-datos-recarga');
+  if (anterior) anterior.remove();
+  const script = document.createElement('script');
+  script.id = 'script-datos-recarga';
+  script.src = 'pronostico_datos.js?t=' + Date.now();   // evita la copia en caché
+  script.onload = () => {
+    if (typeof PRONOSTICOS !== 'undefined' && PRONOSTICOS[estacionActiva]) renderTodo();
+  };
+  document.body.appendChild(script);
+}
+
+setInterval(() => { if (typeof PRONOSTICOS !== 'undefined') renderTodo(); }, MINUTOS_REFRESCO_HORA * 60 * 1000);
+setInterval(recargarDatos, MINUTOS_RECARGA_DATOS * 60 * 1000);
+</script>
+</body>
+</html>
