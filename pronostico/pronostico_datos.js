@@ -1,5 +1,5 @@
 // Generado automáticamente por generar_datos_app.py -- no editar a mano.
-var PRONOSTICO_GENERADO = "2026-10-12T13:15-06:00";
+var PRONOSTICO_GENERADO = "2026-10-12T13:29-06:00";
 var PRONOSTICOS = {
   "salina_cruz": {
     "nombre": "Salina Cruz",
@@ -14,7 +14,7 @@ var PRONOSTICOS = {
         "viento_ms": 2.2,
         "viento_dir_deg": 344.0,
         "racha_ms": 4.1,
-        "presion_hpa": 1013.8,
+        "presion_hpa": 1013.5,
         "precip_mm": 0.0
       },
       {
@@ -25,7 +25,7 @@ var PRONOSTICOS = {
         "viento_ms": 1.7,
         "viento_dir_deg": 339.0,
         "racha_ms": 4.6,
-        "presion_hpa": 1014.6,
+        "presion_hpa": 1014.3,
         "precip_mm": 0.0
       },
       {
@@ -35,8 +35,8 @@ var PRONOSTICOS = {
         "humedad_pct": 60.0,
         "viento_ms": 1.6,
         "viento_dir_deg": 1.0,
-        "racha_ms": 5.7,
-        "presion_hpa": 1014.9,
+        "racha_ms": 6.0,
+        "presion_hpa": 1014.7,
         "precip_mm": 0.0
       },
       {
@@ -46,8 +46,8 @@ var PRONOSTICOS = {
         "humedad_pct": 55.0,
         "viento_ms": 1.8,
         "viento_dir_deg": 25.0,
-        "racha_ms": 8.5,
-        "presion_hpa": 1015.2,
+        "racha_ms": 9.1,
+        "presion_hpa": 1015.1,
         "precip_mm": 0.0
       },
       {
@@ -57,8 +57,8 @@ var PRONOSTICOS = {
         "humedad_pct": 52.0,
         "viento_ms": 2.4,
         "viento_dir_deg": 30.0,
-        "racha_ms": 8.4,
-        "presion_hpa": 1015.1,
+        "racha_ms": 8.2,
+        "presion_hpa": 1015.2,
         "precip_mm": 0.0
       },
       {
@@ -69,7 +69,7 @@ var PRONOSTICOS = {
         "viento_ms": 3.2,
         "viento_dir_deg": 31.0,
         "racha_ms": 7.6,
-        "presion_hpa": 1014.5,
+        "presion_hpa": 1014.6,
         "precip_mm": 0.0
       },
       {
@@ -79,8 +79,8 @@ var PRONOSTICOS = {
         "humedad_pct": 53.0,
         "viento_ms": 4.4,
         "viento_dir_deg": 44.0,
-        "racha_ms": 7.2,
-        "presion_hpa": 1013.5,
+        "racha_ms": 6.9,
+        "presion_hpa": 1013.6,
         "precip_mm": 0.0
       },
       {
@@ -101,8 +101,8 @@ var PRONOSTICOS = {
         "humedad_pct": 58.0,
         "viento_ms": 5.7,
         "viento_dir_deg": 90.0,
-        "racha_ms": 7.0,
-        "presion_hpa": 1011.0,
+        "racha_ms": 6.9,
+        "presion_hpa": 1011.1,
         "precip_mm": 0.0
       },
       {
@@ -112,7 +112,7 @@ var PRONOSTICOS = {
         "humedad_pct": 60.0,
         "viento_ms": 4.4,
         "viento_dir_deg": 103.0,
-        "racha_ms": 6.7,
+        "racha_ms": 6.2,
         "presion_hpa": 1010.2,
         "precip_mm": 0.0
       },
@@ -123,8 +123,8 @@ var PRONOSTICOS = {
         "humedad_pct": 59.0,
         "viento_ms": 3.7,
         "viento_dir_deg": 103.0,
-        "racha_ms": 6.5,
-        "presion_hpa": 1010.1,
+        "racha_ms": 6.2,
+        "presion_hpa": 1010.0,
         "precip_mm": 0.0
       },
       {
@@ -134,8 +134,8 @@ var PRONOSTICOS = {
         "humedad_pct": 60.0,
         "viento_ms": 3.2,
         "viento_dir_deg": 92.0,
-        "racha_ms": 7.2,
-        "presion_hpa": 1010.8,
+        "racha_ms": 6.5,
+        "presion_hpa": 1010.7,
         "precip_mm": 0.0
       },
       {
@@ -146,7 +146,7 @@ var PRONOSTICOS = {
         "viento_ms": 2.7,
         "viento_dir_deg": 104.0,
         "racha_ms": 3.3,
-        "presion_hpa": 1011.4,
+        "presion_hpa": 1011.5,
         "precip_mm": 0.0
       },
       {
@@ -156,7 +156,7 @@ var PRONOSTICOS = {
         "humedad_pct": 80.0,
         "viento_ms": 1.6,
         "viento_dir_deg": 140.0,
-        "racha_ms": 2.6,
+        "racha_ms": 3.0,
         "presion_hpa": 1012.4,
         "precip_mm": 0.0
       },
@@ -178,8 +178,8 @@ var PRONOSTICOS = {
         "humedad_pct": 88.0,
         "viento_ms": 1.6,
         "viento_dir_deg": 251.0,
-        "racha_ms": 3.5,
-        "presion_hpa": 1014.3,
+        "racha_ms": 2.9,
+        "presion_hpa": 1014.2,
         "precip_mm": 0.0
       },
       {
@@ -189,8 +189,8 @@ var PRONOSTICOS = {
         "humedad_pct": 90.0,
         "viento_ms": 1.1,
         "viento_dir_deg": 296.0,
-        "racha_ms": 3.7,
-        "presion_hpa": 1014.6,
+        "racha_ms": 4.1,
+        "presion_hpa": 1014.4,
         "precip_mm": 0.0
       },
       {
@@ -200,7 +200,7 @@ var PRONOSTICOS = {
         "humedad_pct": 89.0,
         "viento_ms": 1.2,
         "viento_dir_deg": 329.0,
-        "racha_ms": 3.3,
+        "racha_ms": 3.6,
         "presion_hpa": 1014.5,
         "precip_mm": 0.0
       },
@@ -211,8 +211,8 @@ var PRONOSTICOS = {
         "humedad_pct": 91.0,
         "viento_ms": 1.9,
         "viento_dir_deg": 345.0,
-        "racha_ms": 3.8,
-        "presion_hpa": 1014.1,
+        "racha_ms": 4.4,
+        "presion_hpa": 1014.2,
         "precip_mm": 0.0
       },
       {
@@ -222,8 +222,8 @@ var PRONOSTICOS = {
         "humedad_pct": 92.0,
         "viento_ms": 2.2,
         "viento_dir_deg": 5.0,
-        "racha_ms": 3.6,
-        "presion_hpa": 1013.5,
+        "racha_ms": 4.3,
+        "presion_hpa": 1013.4,
         "precip_mm": 0.0
       },
       {
@@ -233,8 +233,8 @@ var PRONOSTICOS = {
         "humedad_pct": 92.0,
         "viento_ms": 2.3,
         "viento_dir_deg": 343.0,
-        "racha_ms": 3.5,
-        "presion_hpa": 1012.7,
+        "racha_ms": 4.1,
+        "presion_hpa": 1012.6,
         "precip_mm": 0.0
       },
       {
@@ -244,7 +244,7 @@ var PRONOSTICOS = {
         "humedad_pct": 90.0,
         "viento_ms": 2.2,
         "viento_dir_deg": 352.0,
-        "racha_ms": 3.4,
+        "racha_ms": 3.8,
         "presion_hpa": 1012.1,
         "precip_mm": 0.0
       },
@@ -255,8 +255,8 @@ var PRONOSTICOS = {
         "humedad_pct": 90.0,
         "viento_ms": 2.4,
         "viento_dir_deg": 354.0,
-        "racha_ms": 3.2,
-        "presion_hpa": 1012.1,
+        "racha_ms": 3.8,
+        "presion_hpa": 1012.0,
         "precip_mm": 0.0
       },
       {
@@ -266,7 +266,7 @@ var PRONOSTICOS = {
         "humedad_pct": 89.0,
         "viento_ms": 2.2,
         "viento_dir_deg": 330.0,
-        "racha_ms": 3.6,
+        "racha_ms": 3.9,
         "presion_hpa": 1012.2,
         "precip_mm": 0.0
       },
@@ -277,8 +277,8 @@ var PRONOSTICOS = {
         "humedad_pct": 86.0,
         "viento_ms": 2.0,
         "viento_dir_deg": 347.0,
-        "racha_ms": 4.2,
-        "presion_hpa": 1012.5,
+        "racha_ms": 3.8,
+        "presion_hpa": 1012.7,
         "precip_mm": 0.0
       },
       {
@@ -288,8 +288,8 @@ var PRONOSTICOS = {
         "humedad_pct": 87.0,
         "viento_ms": 1.8,
         "viento_dir_deg": 343.0,
-        "racha_ms": 4.8,
-        "presion_hpa": 1013.3,
+        "racha_ms": 4.1,
+        "presion_hpa": 1013.5,
         "precip_mm": 0.0
       },
       {
@@ -299,8 +299,8 @@ var PRONOSTICOS = {
         "humedad_pct": 80.0,
         "viento_ms": 1.5,
         "viento_dir_deg": 327.0,
-        "racha_ms": 5.2,
-        "presion_hpa": 1013.9,
+        "racha_ms": 4.9,
+        "presion_hpa": 1014.1,
         "precip_mm": 0.0
       },
       {
@@ -311,7 +311,7 @@ var PRONOSTICOS = {
         "viento_ms": 1.1,
         "viento_dir_deg": 302.0,
         "racha_ms": 7.1,
-        "presion_hpa": 1014.3,
+        "presion_hpa": 1014.5,
         "precip_mm": 0.0
       },
       {
@@ -321,8 +321,8 @@ var PRONOSTICOS = {
         "humedad_pct": 55.0,
         "viento_ms": 0.8,
         "viento_dir_deg": 29.0,
-        "racha_ms": 7.8,
-        "presion_hpa": 1014.2,
+        "racha_ms": 8.2,
+        "presion_hpa": 1014.5,
         "precip_mm": 0.0
       },
       {
@@ -332,8 +332,8 @@ var PRONOSTICOS = {
         "humedad_pct": 56.0,
         "viento_ms": 2.5,
         "viento_dir_deg": 69.0,
-        "racha_ms": 7.8,
-        "presion_hpa": 1013.6,
+        "racha_ms": 8.0,
+        "presion_hpa": 1013.9,
         "precip_mm": 0.0
       },
       {
@@ -343,8 +343,8 @@ var PRONOSTICOS = {
         "humedad_pct": 60.0,
         "viento_ms": 3.5,
         "viento_dir_deg": 76.0,
-        "racha_ms": 7.8,
-        "presion_hpa": 1012.6,
+        "racha_ms": 7.9,
+        "presion_hpa": 1012.9,
         "precip_mm": 0.0
       },
       {
@@ -354,8 +354,8 @@ var PRONOSTICOS = {
         "humedad_pct": 67.0,
         "viento_ms": 3.4,
         "viento_dir_deg": 91.0,
-        "racha_ms": 8.0,
-        "presion_hpa": 1011.4,
+        "racha_ms": 7.7,
+        "presion_hpa": 1011.5,
         "precip_mm": 0.0
       },
       {
@@ -365,8 +365,8 @@ var PRONOSTICOS = {
         "humedad_pct": 67.0,
         "viento_ms": 2.8,
         "viento_dir_deg": 111.0,
-        "racha_ms": 8.0,
-        "presion_hpa": 1010.4,
+        "racha_ms": 8.1,
+        "presion_hpa": 1010.6,
         "precip_mm": 0.0
       },
       {
@@ -376,8 +376,8 @@ var PRONOSTICOS = {
         "humedad_pct": 60.0,
         "viento_ms": 2.0,
         "viento_dir_deg": 119.0,
-        "racha_ms": 8.1,
-        "presion_hpa": 1009.7,
+        "racha_ms": 8.8,
+        "presion_hpa": 1010.0,
         "precip_mm": 0.0
       },
       {
@@ -387,8 +387,8 @@ var PRONOSTICOS = {
         "humedad_pct": 55.0,
         "viento_ms": 2.7,
         "viento_dir_deg": 120.0,
-        "racha_ms": 8.4,
-        "presion_hpa": 1009.6,
+        "racha_ms": 9.4,
+        "presion_hpa": 1009.9,
         "precip_mm": 0.0
       },
       {
@@ -398,8 +398,8 @@ var PRONOSTICOS = {
         "humedad_pct": 55.0,
         "viento_ms": 3.1,
         "viento_dir_deg": 130.0,
-        "racha_ms": 9.6,
-        "presion_hpa": 1010.1,
+        "racha_ms": 9.7,
+        "presion_hpa": 1010.3,
         "precip_mm": 0.0
       },
       {
@@ -409,8 +409,8 @@ var PRONOSTICOS = {
         "humedad_pct": 68.0,
         "viento_ms": 2.0,
         "viento_dir_deg": 132.0,
-        "racha_ms": 7.3,
-        "presion_hpa": 1010.8,
+        "racha_ms": 9.4,
+        "presion_hpa": 1010.9,
         "precip_mm": 0.1
       },
       {
@@ -420,8 +420,8 @@ var PRONOSTICOS = {
         "humedad_pct": 86.0,
         "viento_ms": 1.2,
         "viento_dir_deg": 199.0,
-        "racha_ms": 4.0,
-        "presion_hpa": 1011.6,
+        "racha_ms": 9.0,
+        "presion_hpa": 1011.5,
         "precip_mm": 0.1
       },
       {
@@ -431,8 +431,8 @@ var PRONOSTICOS = {
         "humedad_pct": 87.0,
         "viento_ms": 1.3,
         "viento_dir_deg": 269.0,
-        "racha_ms": 4.7,
-        "presion_hpa": 1012.5,
+        "racha_ms": 7.7,
+        "presion_hpa": 1012.4,
         "precip_mm": 0.0
       },
       {
@@ -442,7 +442,7 @@ var PRONOSTICOS = {
         "humedad_pct": 87.0,
         "viento_ms": 1.6,
         "viento_dir_deg": 283.0,
-        "racha_ms": 4.6,
+        "racha_ms": 5.9,
         "presion_hpa": 1013.3,
         "precip_mm": 0.0
       },
@@ -453,7 +453,7 @@ var PRONOSTICOS = {
         "humedad_pct": 88.0,
         "viento_ms": 2.6,
         "viento_dir_deg": 327.0,
-        "racha_ms": 4.3,
+        "racha_ms": 5.8,
         "presion_hpa": 1013.7,
         "precip_mm": 0.0
       },
@@ -464,7 +464,7 @@ var PRONOSTICOS = {
         "humedad_pct": 88.0,
         "viento_ms": 2.7,
         "viento_dir_deg": 346.0,
-        "racha_ms": 4.3,
+        "racha_ms": 4.6,
         "presion_hpa": 1013.6,
         "precip_mm": 0.0
       },
@@ -475,8 +475,8 @@ var PRONOSTICOS = {
         "humedad_pct": 90.0,
         "viento_ms": 2.3,
         "viento_dir_deg": 352.0,
-        "racha_ms": 4.4,
-        "presion_hpa": 1013.0,
+        "racha_ms": 4.3,
+        "presion_hpa": 1013.3,
         "precip_mm": 0.0
       },
       {
@@ -486,7 +486,7 @@ var PRONOSTICOS = {
         "humedad_pct": 89.0,
         "viento_ms": 2.4,
         "viento_dir_deg": 323.0,
-        "racha_ms": 4.2,
+        "racha_ms": 4.9,
         "presion_hpa": 1012.6,
         "precip_mm": 0.0
       },
@@ -497,8 +497,8 @@ var PRONOSTICOS = {
         "humedad_pct": 89.0,
         "viento_ms": 2.2,
         "viento_dir_deg": 345.0,
-        "racha_ms": 4.1,
-        "presion_hpa": 1012.1,
+        "racha_ms": 4.7,
+        "presion_hpa": 1011.9,
         "precip_mm": 0.0
       },
       {
@@ -508,8 +508,8 @@ var PRONOSTICOS = {
         "humedad_pct": 90.0,
         "viento_ms": 2.2,
         "viento_dir_deg": 343.0,
-        "racha_ms": 4.7,
-        "presion_hpa": 1011.5,
+        "racha_ms": 4.8,
+        "presion_hpa": 1011.4,
         "precip_mm": 0.0
       },
       {
@@ -519,8 +519,8 @@ var PRONOSTICOS = {
         "humedad_pct": 90.0,
         "viento_ms": 2.3,
         "viento_dir_deg": 334.0,
-        "racha_ms": 4.8,
-        "presion_hpa": 1011.4,
+        "racha_ms": 4.7,
+        "presion_hpa": 1011.2,
         "precip_mm": 0.0
       },
       {
@@ -530,8 +530,8 @@ var PRONOSTICOS = {
         "humedad_pct": 89.0,
         "viento_ms": 2.2,
         "viento_dir_deg": 346.0,
-        "racha_ms": 5.0,
-        "presion_hpa": 1011.4,
+        "racha_ms": 4.5,
+        "presion_hpa": 1011.5,
         "precip_mm": 0.0
       },
       {
@@ -541,8 +541,8 @@ var PRONOSTICOS = {
         "humedad_pct": 88.0,
         "viento_ms": 1.9,
         "viento_dir_deg": 355.0,
-        "racha_ms": 5.2,
-        "presion_hpa": 1011.5,
+        "racha_ms": 4.5,
+        "presion_hpa": 1011.9,
         "precip_mm": 0.0
       },
       {
@@ -552,8 +552,8 @@ var PRONOSTICOS = {
         "humedad_pct": 88.0,
         "viento_ms": 1.9,
         "viento_dir_deg": 329.0,
-        "racha_ms": 4.7,
-        "presion_hpa": 1012.4,
+        "racha_ms": 5.1,
+        "presion_hpa": 1012.7,
         "precip_mm": 0.0
       },
       {
@@ -563,8 +563,8 @@ var PRONOSTICOS = {
         "humedad_pct": 77.0,
         "viento_ms": 2.0,
         "viento_dir_deg": 315.0,
-        "racha_ms": 4.4,
-        "presion_hpa": 1013.1,
+        "racha_ms": 5.0,
+        "presion_hpa": 1013.3,
         "precip_mm": 0.0
       },
       {
@@ -574,7 +574,7 @@ var PRONOSTICOS = {
         "humedad_pct": 61.0,
         "viento_ms": 1.3,
         "viento_dir_deg": 304.0,
-        "racha_ms": 5.6,
+        "racha_ms": 7.4,
         "presion_hpa": 1013.7,
         "precip_mm": 0.0
       },
@@ -585,8 +585,8 @@ var PRONOSTICOS = {
         "humedad_pct": 52.0,
         "viento_ms": 1.0,
         "viento_dir_deg": 1.0,
-        "racha_ms": 6.5,
-        "presion_hpa": 1013.6,
+        "racha_ms": 6.4,
+        "presion_hpa": 1013.7,
         "precip_mm": 0.0
       },
       {
@@ -597,7 +597,7 @@ var PRONOSTICOS = {
         "viento_ms": 1.9,
         "viento_dir_deg": 64.0,
         "racha_ms": 6.0,
-        "presion_hpa": 1012.9,
+        "presion_hpa": 1013.0,
         "precip_mm": 0.0
       },
       {
@@ -607,8 +607,8 @@ var PRONOSTICOS = {
         "humedad_pct": 55.0,
         "viento_ms": 3.2,
         "viento_dir_deg": 79.0,
-        "racha_ms": 5.2,
-        "presion_hpa": 1012.1,
+        "racha_ms": 5.8,
+        "presion_hpa": 1011.9,
         "precip_mm": 0.0
       },
       {
@@ -618,8 +618,8 @@ var PRONOSTICOS = {
         "humedad_pct": 54.0,
         "viento_ms": 4.2,
         "viento_dir_deg": 67.0,
-        "racha_ms": 5.7,
-        "presion_hpa": 1010.8,
+        "racha_ms": 6.0,
+        "presion_hpa": 1010.6,
         "precip_mm": 0.0
       },
       {
@@ -629,8 +629,8 @@ var PRONOSTICOS = {
         "humedad_pct": 51.0,
         "viento_ms": 3.5,
         "viento_dir_deg": 55.0,
-        "racha_ms": 6.0,
-        "presion_hpa": 1009.8,
+        "racha_ms": 6.7,
+        "presion_hpa": 1009.5,
         "precip_mm": 0.0
       },
       {
@@ -640,8 +640,8 @@ var PRONOSTICOS = {
         "humedad_pct": 48.0,
         "viento_ms": 3.0,
         "viento_dir_deg": 39.0,
-        "racha_ms": 6.1,
-        "presion_hpa": 1009.2,
+        "racha_ms": 6.6,
+        "presion_hpa": 1009.3,
         "precip_mm": 0.0
       },
       {
@@ -651,8 +651,8 @@ var PRONOSTICOS = {
         "humedad_pct": 48.0,
         "viento_ms": 3.6,
         "viento_dir_deg": 28.0,
-        "racha_ms": 7.6,
-        "presion_hpa": 1009.4,
+        "racha_ms": 6.6,
+        "presion_hpa": 1009.3,
         "precip_mm": 0.0
       },
       {
@@ -662,8 +662,8 @@ var PRONOSTICOS = {
         "humedad_pct": 51.0,
         "viento_ms": 3.4,
         "viento_dir_deg": 23.0,
-        "racha_ms": 8.7,
-        "presion_hpa": 1010.0,
+        "racha_ms": 8.2,
+        "presion_hpa": 1010.1,
         "precip_mm": 0.2
       },
       {
@@ -673,8 +673,8 @@ var PRONOSTICOS = {
         "humedad_pct": 58.0,
         "viento_ms": 2.2,
         "viento_dir_deg": 44.0,
-        "racha_ms": 7.7,
-        "presion_hpa": 1010.5,
+        "racha_ms": 6.5,
+        "presion_hpa": 1011.1,
         "precip_mm": 0.6
       },
       {
@@ -684,8 +684,8 @@ var PRONOSTICOS = {
         "humedad_pct": 69.0,
         "viento_ms": 0.7,
         "viento_dir_deg": 54.0,
-        "racha_ms": 3.8,
-        "presion_hpa": 1011.7,
+        "racha_ms": 3.0,
+        "presion_hpa": 1012.2,
         "precip_mm": 0.9
       },
       {
@@ -695,8 +695,8 @@ var PRONOSTICOS = {
         "humedad_pct": 72.0,
         "viento_ms": 0.4,
         "viento_dir_deg": 304.0,
-        "racha_ms": 2.5,
-        "presion_hpa": 1012.4,
+        "racha_ms": 2.2,
+        "presion_hpa": 1012.8,
         "precip_mm": 0.0
       },
       {
@@ -706,8 +706,8 @@ var PRONOSTICOS = {
         "humedad_pct": 74.0,
         "viento_ms": 0.4,
         "viento_dir_deg": 280.0,
-        "racha_ms": 2.9,
-        "presion_hpa": 1013.2,
+        "racha_ms": 1.9,
+        "presion_hpa": 1013.3,
         "precip_mm": 0.0
       },
       {
@@ -717,8 +717,8 @@ var PRONOSTICOS = {
         "humedad_pct": 75.0,
         "viento_ms": 1.5,
         "viento_dir_deg": 283.0,
-        "racha_ms": 2.8,
-        "presion_hpa": 1013.5,
+        "racha_ms": 2.4,
+        "presion_hpa": 1013.6,
         "precip_mm": 0.0
       },
       {
@@ -728,8 +728,8 @@ var PRONOSTICOS = {
         "humedad_pct": 76.0,
         "viento_ms": 0.9,
         "viento_dir_deg": 338.0,
-        "racha_ms": 2.5,
-        "presion_hpa": 1013.4,
+        "racha_ms": 2.3,
+        "presion_hpa": 1013.3,
         "precip_mm": 0.2
       },
       {
@@ -739,8 +739,8 @@ var PRONOSTICOS = {
         "humedad_pct": 75.0,
         "viento_ms": 1.5,
         "viento_dir_deg": 328.0,
-        "racha_ms": 3.2,
-        "presion_hpa": 1012.5,
+        "racha_ms": 2.9,
+        "presion_hpa": 1012.8,
         "precip_mm": 0.0
       },
       {
@@ -761,8 +761,8 @@ var PRONOSTICOS = {
         "humedad_pct": 73.0,
         "viento_ms": 2.2,
         "viento_dir_deg": 329.0,
-        "racha_ms": 3.5,
-        "presion_hpa": 1011.2,
+        "racha_ms": 2.7,
+        "presion_hpa": 1011.8,
         "precip_mm": 0.0
       },
       {
@@ -772,8 +772,8 @@ var PRONOSTICOS = {
         "humedad_pct": 73.0,
         "viento_ms": 2.4,
         "viento_dir_deg": 337.0,
-        "racha_ms": 3.1,
-        "presion_hpa": 1011.2,
+        "racha_ms": 2.9,
+        "presion_hpa": 1011.6,
         "precip_mm": 0.0
       },
       {
@@ -783,8 +783,8 @@ var PRONOSTICOS = {
         "humedad_pct": 72.0,
         "viento_ms": 2.0,
         "viento_dir_deg": 344.0,
-        "racha_ms": 3.2,
-        "presion_hpa": 1011.0,
+        "racha_ms": 2.5,
+        "presion_hpa": 1011.5,
         "precip_mm": 0.0
       },
       {
@@ -794,8 +794,8 @@ var PRONOSTICOS = {
         "humedad_pct": 71.0,
         "viento_ms": 1.9,
         "viento_dir_deg": 331.0,
-        "racha_ms": 2.4,
-        "presion_hpa": 1011.3,
+        "racha_ms": 2.9,
+        "presion_hpa": 1011.5,
         "precip_mm": 0.5
       },
       {
@@ -805,8 +805,8 @@ var PRONOSTICOS = {
         "humedad_pct": 71.0,
         "viento_ms": 1.7,
         "viento_dir_deg": 322.0,
-        "racha_ms": 2.8,
-        "presion_hpa": 1011.8,
+        "racha_ms": 2.2,
+        "presion_hpa": 1012.0,
         "precip_mm": 0.2
       }
     ]
@@ -824,7 +824,7 @@ var PRONOSTICOS = {
         "viento_ms": 2.2,
         "viento_dir_deg": 4.0,
         "racha_ms": 8.9,
-        "presion_hpa": 1011.6,
+        "presion_hpa": 1011.3,
         "precip_mm": 0.0
       },
       {
@@ -834,8 +834,8 @@ var PRONOSTICOS = {
         "humedad_pct": 77.0,
         "viento_ms": 2.4,
         "viento_dir_deg": 3.0,
-        "racha_ms": 10.1,
-        "presion_hpa": 1012.1,
+        "racha_ms": 10.0,
+        "presion_hpa": 1011.9,
         "precip_mm": 0.0
       },
       {
@@ -845,8 +845,8 @@ var PRONOSTICOS = {
         "humedad_pct": 72.0,
         "viento_ms": 2.6,
         "viento_dir_deg": 9.0,
-        "racha_ms": 10.4,
-        "presion_hpa": 1012.5,
+        "racha_ms": 10.3,
+        "presion_hpa": 1012.2,
         "precip_mm": 0.0
       },
       {
@@ -856,8 +856,8 @@ var PRONOSTICOS = {
         "humedad_pct": 66.0,
         "viento_ms": 1.7,
         "viento_dir_deg": 18.0,
-        "racha_ms": 9.7,
-        "presion_hpa": 1012.7,
+        "racha_ms": 9.5,
+        "presion_hpa": 1012.6,
         "precip_mm": 0.0
       },
       {
@@ -867,7 +867,7 @@ var PRONOSTICOS = {
         "humedad_pct": 61.0,
         "viento_ms": 0.6,
         "viento_dir_deg": 74.0,
-        "racha_ms": 8.7,
+        "racha_ms": 8.2,
         "presion_hpa": 1012.2,
         "precip_mm": 0.0
       },
@@ -878,8 +878,8 @@ var PRONOSTICOS = {
         "humedad_pct": 65.0,
         "viento_ms": 2.7,
         "viento_dir_deg": 144.0,
-        "racha_ms": 7.1,
-        "presion_hpa": 1011.6,
+        "racha_ms": 6.8,
+        "presion_hpa": 1011.7,
         "precip_mm": 0.0
       },
       {
@@ -889,8 +889,8 @@ var PRONOSTICOS = {
         "humedad_pct": 66.0,
         "viento_ms": 4.2,
         "viento_dir_deg": 146.0,
-        "racha_ms": 7.3,
-        "presion_hpa": 1010.3,
+        "racha_ms": 7.0,
+        "presion_hpa": 1010.4,
         "precip_mm": 0.0
       },
       {
@@ -900,8 +900,8 @@ var PRONOSTICOS = {
         "humedad_pct": 65.0,
         "viento_ms": 4.5,
         "viento_dir_deg": 149.0,
-        "racha_ms": 7.4,
-        "presion_hpa": 1009.1,
+        "racha_ms": 6.9,
+        "presion_hpa": 1009.3,
         "precip_mm": 0.0
       },
       {
@@ -911,8 +911,8 @@ var PRONOSTICOS = {
         "humedad_pct": 66.0,
         "viento_ms": 5.2,
         "viento_dir_deg": 154.0,
-        "racha_ms": 7.3,
-        "presion_hpa": 1008.0,
+        "racha_ms": 6.8,
+        "presion_hpa": 1008.3,
         "precip_mm": 0.0
       },
       {
@@ -922,8 +922,8 @@ var PRONOSTICOS = {
         "humedad_pct": 65.0,
         "viento_ms": 4.2,
         "viento_dir_deg": 148.0,
-        "racha_ms": 7.4,
-        "presion_hpa": 1007.4,
+        "racha_ms": 7.2,
+        "presion_hpa": 1007.6,
         "precip_mm": 0.0
       },
       {
@@ -933,8 +933,8 @@ var PRONOSTICOS = {
         "humedad_pct": 65.0,
         "viento_ms": 2.8,
         "viento_dir_deg": 144.0,
-        "racha_ms": 9.0,
-        "presion_hpa": 1007.4,
+        "racha_ms": 8.7,
+        "presion_hpa": 1007.3,
         "precip_mm": 0.0
       },
       {
@@ -944,8 +944,8 @@ var PRONOSTICOS = {
         "humedad_pct": 67.0,
         "viento_ms": 2.4,
         "viento_dir_deg": 157.0,
-        "racha_ms": 9.5,
-        "presion_hpa": 1008.0,
+        "racha_ms": 10.1,
+        "presion_hpa": 1007.9,
         "precip_mm": 0.0
       },
       {
@@ -955,8 +955,8 @@ var PRONOSTICOS = {
         "humedad_pct": 70.0,
         "viento_ms": 2.9,
         "viento_dir_deg": 185.0,
-        "racha_ms": 9.1,
-        "presion_hpa": 1009.0,
+        "racha_ms": 10.3,
+        "presion_hpa": 1009.1,
         "precip_mm": 1.2
       },
       {
@@ -966,8 +966,8 @@ var PRONOSTICOS = {
         "humedad_pct": 71.0,
         "viento_ms": 2.4,
         "viento_dir_deg": 184.0,
-        "racha_ms": 7.7,
-        "presion_hpa": 1010.1,
+        "racha_ms": 9.2,
+        "presion_hpa": 1010.0,
         "precip_mm": 1.5
       },
       {
@@ -977,8 +977,8 @@ var PRONOSTICOS = {
         "humedad_pct": 70.0,
         "viento_ms": 1.6,
         "viento_dir_deg": 197.0,
-        "racha_ms": 6.4,
-        "presion_hpa": 1011.1,
+        "racha_ms": 8.3,
+        "presion_hpa": 1011.0,
         "precip_mm": 0.6
       },
       {
@@ -988,8 +988,8 @@ var PRONOSTICOS = {
         "humedad_pct": 70.0,
         "viento_ms": 1.8,
         "viento_dir_deg": 152.0,
-        "racha_ms": 6.1,
-        "presion_hpa": 1011.7,
+        "racha_ms": 7.3,
+        "presion_hpa": 1011.5,
         "precip_mm": 0.0
       },
       {
@@ -999,8 +999,8 @@ var PRONOSTICOS = {
         "humedad_pct": 70.0,
         "viento_ms": 2.7,
         "viento_dir_deg": 149.0,
-        "racha_ms": 5.9,
-        "presion_hpa": 1011.9,
+        "racha_ms": 7.0,
+        "presion_hpa": 1011.8,
         "precip_mm": 0.0
       },
       {
@@ -1010,8 +1010,8 @@ var PRONOSTICOS = {
         "humedad_pct": 70.0,
         "viento_ms": 1.8,
         "viento_dir_deg": 137.0,
-        "racha_ms": 5.2,
-        "presion_hpa": 1011.9,
+        "racha_ms": 6.5,
+        "presion_hpa": 1011.8,
         "precip_mm": 0.2
       },
       {
@@ -1021,8 +1021,8 @@ var PRONOSTICOS = {
         "humedad_pct": 71.0,
         "viento_ms": 1.4,
         "viento_dir_deg": 85.0,
-        "racha_ms": 5.6,
-        "presion_hpa": 1011.3,
+        "racha_ms": 5.8,
+        "presion_hpa": 1011.5,
         "precip_mm": 0.0
       },
       {
@@ -1032,8 +1032,8 @@ var PRONOSTICOS = {
         "humedad_pct": 76.0,
         "viento_ms": 2.0,
         "viento_dir_deg": 8.0,
-        "racha_ms": 5.4,
-        "presion_hpa": 1010.8,
+        "racha_ms": 6.1,
+        "presion_hpa": 1010.7,
         "precip_mm": 0.0
       },
       {
@@ -1043,8 +1043,8 @@ var PRONOSTICOS = {
         "humedad_pct": 84.0,
         "viento_ms": 3.1,
         "viento_dir_deg": 340.0,
-        "racha_ms": 5.4,
-        "presion_hpa": 1010.1,
+        "racha_ms": 6.1,
+        "presion_hpa": 1010.0,
         "precip_mm": 0.0
       },
       {
@@ -1054,8 +1054,8 @@ var PRONOSTICOS = {
         "humedad_pct": 83.0,
         "viento_ms": 2.9,
         "viento_dir_deg": 334.0,
-        "racha_ms": 6.1,
-        "presion_hpa": 1009.6,
+        "racha_ms": 6.6,
+        "presion_hpa": 1009.5,
         "precip_mm": 0.0
       },
       {
@@ -1065,7 +1065,7 @@ var PRONOSTICOS = {
         "humedad_pct": 79.0,
         "viento_ms": 2.8,
         "viento_dir_deg": 328.0,
-        "racha_ms": 6.8,
+        "racha_ms": 6.9,
         "presion_hpa": 1009.5,
         "precip_mm": 0.0
       },
@@ -1076,7 +1076,7 @@ var PRONOSTICOS = {
         "humedad_pct": 78.0,
         "viento_ms": 2.3,
         "viento_dir_deg": 332.0,
-        "racha_ms": 7.4,
+        "racha_ms": 7.5,
         "presion_hpa": 1009.8,
         "precip_mm": 0.0
       },
@@ -1087,8 +1087,8 @@ var PRONOSTICOS = {
         "humedad_pct": 78.0,
         "viento_ms": 2.4,
         "viento_dir_deg": 340.0,
-        "racha_ms": 8.2,
-        "presion_hpa": 1010.3,
+        "racha_ms": 8.6,
+        "presion_hpa": 1010.4,
         "precip_mm": 0.0
       },
       {
@@ -1098,8 +1098,8 @@ var PRONOSTICOS = {
         "humedad_pct": 76.0,
         "viento_ms": 2.7,
         "viento_dir_deg": 337.0,
-        "racha_ms": 10.0,
-        "presion_hpa": 1010.9,
+        "racha_ms": 9.9,
+        "presion_hpa": 1011.0,
         "precip_mm": 0.0
       },
       {
@@ -1109,8 +1109,8 @@ var PRONOSTICOS = {
         "humedad_pct": 73.0,
         "viento_ms": 2.8,
         "viento_dir_deg": 330.0,
-        "racha_ms": 10.9,
-        "presion_hpa": 1011.3,
+        "racha_ms": 10.4,
+        "presion_hpa": 1011.5,
         "precip_mm": 0.0
       },
       {
@@ -1120,8 +1120,8 @@ var PRONOSTICOS = {
         "humedad_pct": 69.0,
         "viento_ms": 2.4,
         "viento_dir_deg": 340.0,
-        "racha_ms": 10.1,
-        "presion_hpa": 1011.5,
+        "racha_ms": 9.8,
+        "presion_hpa": 1011.7,
         "precip_mm": 0.0
       },
       {
@@ -1131,8 +1131,8 @@ var PRONOSTICOS = {
         "humedad_pct": 64.0,
         "viento_ms": 2.2,
         "viento_dir_deg": 344.0,
-        "racha_ms": 8.7,
-        "presion_hpa": 1011.2,
+        "racha_ms": 8.5,
+        "presion_hpa": 1011.6,
         "precip_mm": 0.0
       },
       {
@@ -1142,8 +1142,8 @@ var PRONOSTICOS = {
         "humedad_pct": 59.0,
         "viento_ms": 2.0,
         "viento_dir_deg": 335.0,
-        "racha_ms": 7.8,
-        "presion_hpa": 1010.6,
+        "racha_ms": 7.9,
+        "presion_hpa": 1010.9,
         "precip_mm": 0.0
       },
       {
@@ -1153,8 +1153,8 @@ var PRONOSTICOS = {
         "humedad_pct": 54.0,
         "viento_ms": 1.5,
         "viento_dir_deg": 321.0,
-        "racha_ms": 7.6,
-        "presion_hpa": 1009.4,
+        "racha_ms": 7.8,
+        "presion_hpa": 1009.6,
         "precip_mm": 0.0
       },
       {
@@ -1164,8 +1164,8 @@ var PRONOSTICOS = {
         "humedad_pct": 53.0,
         "viento_ms": 1.5,
         "viento_dir_deg": 264.0,
-        "racha_ms": 7.4,
-        "presion_hpa": 1008.3,
+        "racha_ms": 7.6,
+        "presion_hpa": 1008.4,
         "precip_mm": 0.0
       },
       {
@@ -1175,7 +1175,7 @@ var PRONOSTICOS = {
         "humedad_pct": 55.0,
         "viento_ms": 2.8,
         "viento_dir_deg": 231.0,
-        "racha_ms": 8.0,
+        "racha_ms": 7.8,
         "presion_hpa": 1007.5,
         "precip_mm": 0.0
       },
@@ -1186,7 +1186,7 @@ var PRONOSTICOS = {
         "humedad_pct": 60.0,
         "viento_ms": 4.3,
         "viento_dir_deg": 226.0,
-        "racha_ms": 8.9,
+        "racha_ms": 9.0,
         "presion_hpa": 1006.9,
         "precip_mm": 0.0
       },
@@ -1197,8 +1197,8 @@ var PRONOSTICOS = {
         "humedad_pct": 61.0,
         "viento_ms": 4.5,
         "viento_dir_deg": 224.0,
-        "racha_ms": 9.6,
-        "presion_hpa": 1006.8,
+        "racha_ms": 10.1,
+        "presion_hpa": 1007.0,
         "precip_mm": 0.0
       },
       {
@@ -1208,8 +1208,8 @@ var PRONOSTICOS = {
         "humedad_pct": 63.0,
         "viento_ms": 3.8,
         "viento_dir_deg": 222.0,
-        "racha_ms": 9.0,
-        "presion_hpa": 1007.4,
+        "racha_ms": 9.3,
+        "presion_hpa": 1007.6,
         "precip_mm": 0.0
       },
       {
@@ -1219,8 +1219,8 @@ var PRONOSTICOS = {
         "humedad_pct": 67.0,
         "viento_ms": 3.2,
         "viento_dir_deg": 229.0,
-        "racha_ms": 9.0,
-        "presion_hpa": 1008.3,
+        "racha_ms": 9.7,
+        "presion_hpa": 1008.4,
         "precip_mm": 0.0
       },
       {
@@ -1230,8 +1230,8 @@ var PRONOSTICOS = {
         "humedad_pct": 71.0,
         "viento_ms": 3.2,
         "viento_dir_deg": 227.0,
-        "racha_ms": 8.7,
-        "presion_hpa": 1009.3,
+        "racha_ms": 9.4,
+        "presion_hpa": 1009.2,
         "precip_mm": 0.3
       },
       {
@@ -1241,8 +1241,8 @@ var PRONOSTICOS = {
         "humedad_pct": 70.0,
         "viento_ms": 1.4,
         "viento_dir_deg": 187.0,
-        "racha_ms": 7.8,
-        "presion_hpa": 1010.2,
+        "racha_ms": 8.2,
+        "presion_hpa": 1010.3,
         "precip_mm": 0.9
       },
       {
@@ -1252,8 +1252,8 @@ var PRONOSTICOS = {
         "humedad_pct": 71.0,
         "viento_ms": 2.4,
         "viento_dir_deg": 137.0,
-        "racha_ms": 7.0,
-        "presion_hpa": 1010.9,
+        "racha_ms": 7.3,
+        "presion_hpa": 1011.0,
         "precip_mm": 1.2
       },
       {
@@ -1263,8 +1263,8 @@ var PRONOSTICOS = {
         "humedad_pct": 73.0,
         "viento_ms": 2.2,
         "viento_dir_deg": 122.0,
-        "racha_ms": 6.5,
-        "presion_hpa": 1011.1,
+        "racha_ms": 7.1,
+        "presion_hpa": 1011.3,
         "precip_mm": 0.5
       },
       {
@@ -1274,7 +1274,7 @@ var PRONOSTICOS = {
         "humedad_pct": 77.0,
         "viento_ms": 2.0,
         "viento_dir_deg": 76.0,
-        "racha_ms": 6.8,
+        "racha_ms": 7.1,
         "presion_hpa": 1011.0,
         "precip_mm": 0.0
       },
@@ -1285,8 +1285,8 @@ var PRONOSTICOS = {
         "humedad_pct": 78.0,
         "viento_ms": 0.8,
         "viento_dir_deg": 22.0,
-        "racha_ms": 6.4,
-        "presion_hpa": 1010.4,
+        "racha_ms": 6.1,
+        "presion_hpa": 1010.7,
         "precip_mm": 0.8
       },
       {
@@ -1296,8 +1296,8 @@ var PRONOSTICOS = {
         "humedad_pct": 79.0,
         "viento_ms": 1.5,
         "viento_dir_deg": 339.0,
-        "racha_ms": 6.3,
-        "presion_hpa": 1009.9,
+        "racha_ms": 5.6,
+        "presion_hpa": 1010.2,
         "precip_mm": 0.0
       },
       {
@@ -1307,7 +1307,7 @@ var PRONOSTICOS = {
         "humedad_pct": 81.0,
         "viento_ms": 2.1,
         "viento_dir_deg": 333.0,
-        "racha_ms": 5.6,
+        "racha_ms": 5.8,
         "presion_hpa": 1009.5,
         "precip_mm": 0.0
       },
@@ -1318,8 +1318,8 @@ var PRONOSTICOS = {
         "humedad_pct": 79.0,
         "viento_ms": 1.9,
         "viento_dir_deg": 335.0,
-        "racha_ms": 6.1,
-        "presion_hpa": 1009.1,
+        "racha_ms": 6.3,
+        "presion_hpa": 1009.0,
         "precip_mm": 0.0
       },
       {
@@ -1329,8 +1329,8 @@ var PRONOSTICOS = {
         "humedad_pct": 77.0,
         "viento_ms": 1.7,
         "viento_dir_deg": 341.0,
-        "racha_ms": 6.8,
-        "presion_hpa": 1008.8,
+        "racha_ms": 6.9,
+        "presion_hpa": 1008.7,
         "precip_mm": 0.0
       },
       {
@@ -1340,8 +1340,8 @@ var PRONOSTICOS = {
         "humedad_pct": 76.0,
         "viento_ms": 2.1,
         "viento_dir_deg": 338.0,
-        "racha_ms": 7.4,
-        "presion_hpa": 1009.1,
+        "racha_ms": 7.2,
+        "presion_hpa": 1009.0,
         "precip_mm": 0.0
       },
       {
@@ -1351,8 +1351,8 @@ var PRONOSTICOS = {
         "humedad_pct": 77.0,
         "viento_ms": 2.4,
         "viento_dir_deg": 342.0,
-        "racha_ms": 8.2,
-        "presion_hpa": 1009.4,
+        "racha_ms": 7.2,
+        "presion_hpa": 1009.7,
         "precip_mm": 0.0
       },
       {
@@ -1362,8 +1362,8 @@ var PRONOSTICOS = {
         "humedad_pct": 77.0,
         "viento_ms": 3.1,
         "viento_dir_deg": 345.0,
-        "racha_ms": 8.7,
-        "presion_hpa": 1009.9,
+        "racha_ms": 7.9,
+        "presion_hpa": 1010.4,
         "precip_mm": 0.0
       },
       {
@@ -1373,8 +1373,8 @@ var PRONOSTICOS = {
         "humedad_pct": 73.0,
         "viento_ms": 3.1,
         "viento_dir_deg": 353.0,
-        "racha_ms": 8.4,
-        "presion_hpa": 1010.5,
+        "racha_ms": 8.3,
+        "presion_hpa": 1010.8,
         "precip_mm": 0.0
       },
       {
@@ -1384,7 +1384,7 @@ var PRONOSTICOS = {
         "humedad_pct": 66.0,
         "viento_ms": 2.9,
         "viento_dir_deg": 351.0,
-        "racha_ms": 6.3,
+        "racha_ms": 7.2,
         "presion_hpa": 1011.1,
         "precip_mm": 0.0
       },
@@ -1395,8 +1395,8 @@ var PRONOSTICOS = {
         "humedad_pct": 58.0,
         "viento_ms": 2.7,
         "viento_dir_deg": 342.0,
-        "racha_ms": 5.1,
-        "presion_hpa": 1010.8,
+        "racha_ms": 5.5,
+        "presion_hpa": 1011.0,
         "precip_mm": 0.0
       },
       {
@@ -1407,7 +1407,7 @@ var PRONOSTICOS = {
         "viento_ms": 1.6,
         "viento_dir_deg": 342.0,
         "racha_ms": 3.8,
-        "presion_hpa": 1010.2,
+        "presion_hpa": 1010.3,
         "precip_mm": 0.0
       },
       {
@@ -1417,8 +1417,8 @@ var PRONOSTICOS = {
         "humedad_pct": 53.0,
         "viento_ms": 0.8,
         "viento_dir_deg": 295.0,
-        "racha_ms": 3.4,
-        "presion_hpa": 1009.3,
+        "racha_ms": 3.8,
+        "presion_hpa": 1009.0,
         "precip_mm": 0.0
       },
       {
@@ -1428,8 +1428,8 @@ var PRONOSTICOS = {
         "humedad_pct": 51.0,
         "viento_ms": 1.4,
         "viento_dir_deg": 218.0,
-        "racha_ms": 3.2,
-        "presion_hpa": 1008.1,
+        "racha_ms": 3.3,
+        "presion_hpa": 1007.9,
         "precip_mm": 0.0
       },
       {
@@ -1439,7 +1439,7 @@ var PRONOSTICOS = {
         "humedad_pct": 51.0,
         "viento_ms": 1.9,
         "viento_dir_deg": 214.0,
-        "racha_ms": 3.6,
+        "racha_ms": 3.2,
         "presion_hpa": 1007.4,
         "precip_mm": 0.0
       },
@@ -1450,8 +1450,8 @@ var PRONOSTICOS = {
         "humedad_pct": 54.0,
         "viento_ms": 2.2,
         "viento_dir_deg": 226.0,
-        "racha_ms": 4.4,
-        "presion_hpa": 1007.0,
+        "racha_ms": 4.9,
+        "presion_hpa": 1007.3,
         "precip_mm": 0.4
       },
       {
@@ -1461,8 +1461,8 @@ var PRONOSTICOS = {
         "humedad_pct": 59.0,
         "viento_ms": 3.4,
         "viento_dir_deg": 235.0,
-        "racha_ms": 4.2,
-        "presion_hpa": 1007.1,
+        "racha_ms": 4.1,
+        "presion_hpa": 1007.4,
         "precip_mm": 0.4
       },
       {
@@ -1472,8 +1472,8 @@ var PRONOSTICOS = {
         "humedad_pct": 61.0,
         "viento_ms": 2.6,
         "viento_dir_deg": 263.0,
-        "racha_ms": 4.6,
-        "presion_hpa": 1007.6,
+        "racha_ms": 3.1,
+        "presion_hpa": 1007.9,
         "precip_mm": 0.1
       },
       {
@@ -1483,8 +1483,8 @@ var PRONOSTICOS = {
         "humedad_pct": 62.0,
         "viento_ms": 1.5,
         "viento_dir_deg": 307.0,
-        "racha_ms": 3.8,
-        "presion_hpa": 1008.2,
+        "racha_ms": 2.6,
+        "presion_hpa": 1008.6,
         "precip_mm": 0.1
       },
       {
@@ -1495,7 +1495,7 @@ var PRONOSTICOS = {
         "viento_ms": 2.9,
         "viento_dir_deg": 357.0,
         "racha_ms": 3.4,
-        "presion_hpa": 1009.1,
+        "presion_hpa": 1009.5,
         "precip_mm": 0.3
       },
       {
@@ -1506,7 +1506,7 @@ var PRONOSTICOS = {
         "viento_ms": 3.1,
         "viento_dir_deg": 42.0,
         "racha_ms": 3.7,
-        "presion_hpa": 1009.9,
+        "presion_hpa": 1010.1,
         "precip_mm": 0.5
       },
       {
@@ -1528,7 +1528,7 @@ var PRONOSTICOS = {
         "viento_ms": 2.2,
         "viento_dir_deg": 41.0,
         "racha_ms": 2.6,
-        "presion_hpa": 1010.8,
+        "presion_hpa": 1011.1,
         "precip_mm": 1.3
       },
       {
@@ -1539,7 +1539,7 @@ var PRONOSTICOS = {
         "viento_ms": 1.9,
         "viento_dir_deg": 54.0,
         "racha_ms": 2.2,
-        "presion_hpa": 1010.7,
+        "presion_hpa": 1010.8,
         "precip_mm": 0.6
       },
       {
@@ -1550,7 +1550,7 @@ var PRONOSTICOS = {
         "viento_ms": 1.9,
         "viento_dir_deg": 31.0,
         "racha_ms": 2.3,
-        "presion_hpa": 1010.1,
+        "presion_hpa": 1010.4,
         "precip_mm": 1.1
       },
       {
@@ -1572,7 +1572,7 @@ var PRONOSTICOS = {
         "viento_ms": 2.1,
         "viento_dir_deg": 0.0,
         "racha_ms": 2.5,
-        "presion_hpa": 1009.0,
+        "presion_hpa": 1009.3,
         "precip_mm": 1.4
       },
       {
@@ -1583,7 +1583,7 @@ var PRONOSTICOS = {
         "viento_ms": 2.3,
         "viento_dir_deg": 348.0,
         "racha_ms": 2.8,
-        "presion_hpa": 1008.9,
+        "presion_hpa": 1009.3,
         "precip_mm": 2.4
       },
       {
@@ -1594,7 +1594,7 @@ var PRONOSTICOS = {
         "viento_ms": 2.4,
         "viento_dir_deg": 348.0,
         "racha_ms": 2.8,
-        "presion_hpa": 1008.8,
+        "presion_hpa": 1009.3,
         "precip_mm": 2.2
       },
       {
@@ -1605,7 +1605,7 @@ var PRONOSTICOS = {
         "viento_ms": 1.9,
         "viento_dir_deg": 2.0,
         "racha_ms": 2.3,
-        "presion_hpa": 1009.0,
+        "presion_hpa": 1009.4,
         "precip_mm": 0.6
       },
       {
@@ -1615,14 +1615,14 @@ var PRONOSTICOS = {
         "humedad_pct": 82.0,
         "viento_ms": 1.8,
         "viento_dir_deg": 11.0,
-        "racha_ms": 3.1,
-        "presion_hpa": 1009.4,
+        "racha_ms": 2.2,
+        "presion_hpa": 1009.7,
         "precip_mm": 0.0
       }
     ]
   },
   "capitania": {
-    "nombre": "Capitanía de Puerto",
+    "nombre": "Capitanía de Puerto de Salina Cruz",
     "lat": 16.17062,
     "lon": -95.19272,
     "pronostico": [
@@ -1634,7 +1634,7 @@ var PRONOSTICOS = {
         "viento_ms": 3.4,
         "viento_dir_deg": 316.0,
         "racha_ms": 4.0,
-        "presion_hpa": 1011.7,
+        "presion_hpa": 1011.4,
         "precip_mm": 0.0
       },
       {
@@ -1645,7 +1645,7 @@ var PRONOSTICOS = {
         "viento_ms": 2.5,
         "viento_dir_deg": 320.0,
         "racha_ms": 4.3,
-        "presion_hpa": 1012.3,
+        "presion_hpa": 1012.0,
         "precip_mm": 0.0
       },
       {
@@ -1655,8 +1655,8 @@ var PRONOSTICOS = {
         "humedad_pct": 63.0,
         "viento_ms": 2.4,
         "viento_dir_deg": 353.0,
-        "racha_ms": 5.3,
-        "presion_hpa": 1012.5,
+        "racha_ms": 5.6,
+        "presion_hpa": 1012.3,
         "precip_mm": 0.0
       },
       {
@@ -1666,8 +1666,8 @@ var PRONOSTICOS = {
         "humedad_pct": 59.0,
         "viento_ms": 2.5,
         "viento_dir_deg": 29.0,
-        "racha_ms": 7.9,
-        "presion_hpa": 1012.6,
+        "racha_ms": 8.5,
+        "presion_hpa": 1012.5,
         "precip_mm": 0.0
       },
       {
@@ -1677,8 +1677,8 @@ var PRONOSTICOS = {
         "humedad_pct": 57.0,
         "viento_ms": 3.2,
         "viento_dir_deg": 46.0,
-        "racha_ms": 7.8,
-        "presion_hpa": 1012.3,
+        "racha_ms": 7.6,
+        "presion_hpa": 1012.4,
         "precip_mm": 0.0
       },
       {
@@ -1689,7 +1689,7 @@ var PRONOSTICOS = {
         "viento_ms": 4.1,
         "viento_dir_deg": 58.0,
         "racha_ms": 7.1,
-        "presion_hpa": 1011.6,
+        "presion_hpa": 1011.7,
         "precip_mm": 0.0
       },
       {
@@ -1699,8 +1699,8 @@ var PRONOSTICOS = {
         "humedad_pct": 60.0,
         "viento_ms": 5.4,
         "viento_dir_deg": 80.0,
-        "racha_ms": 6.7,
-        "presion_hpa": 1010.4,
+        "racha_ms": 6.5,
+        "presion_hpa": 1010.5,
         "precip_mm": 0.0
       },
       {
@@ -1722,7 +1722,7 @@ var PRONOSTICOS = {
         "viento_ms": 7.7,
         "viento_dir_deg": 128.0,
         "racha_ms": 9.2,
-        "presion_hpa": 1008.1,
+        "presion_hpa": 1008.2,
         "precip_mm": 0.0
       },
       {
@@ -1744,7 +1744,7 @@ var PRONOSTICOS = {
         "viento_ms": 5.3,
         "viento_dir_deg": 143.0,
         "racha_ms": 6.3,
-        "presion_hpa": 1007.4,
+        "presion_hpa": 1007.3,
         "precip_mm": 0.0
       },
       {
@@ -1754,8 +1754,8 @@ var PRONOSTICOS = {
         "humedad_pct": 67.0,
         "viento_ms": 4.8,
         "viento_dir_deg": 132.0,
-        "racha_ms": 6.7,
-        "presion_hpa": 1008.2,
+        "racha_ms": 6.0,
+        "presion_hpa": 1008.1,
         "precip_mm": 0.0
       },
       {
@@ -1766,7 +1766,7 @@ var PRONOSTICOS = {
         "viento_ms": 4.2,
         "viento_dir_deg": 146.0,
         "racha_ms": 5.0,
-        "presion_hpa": 1008.9,
+        "presion_hpa": 1009.0,
         "precip_mm": 0.0
       },
       {
@@ -1798,8 +1798,8 @@ var PRONOSTICOS = {
         "humedad_pct": 92.0,
         "viento_ms": 2.5,
         "viento_dir_deg": 259.0,
-        "racha_ms": 3.3,
-        "presion_hpa": 1011.8,
+        "racha_ms": 3.0,
+        "presion_hpa": 1011.7,
         "precip_mm": 0.0
       },
       {
@@ -1809,8 +1809,8 @@ var PRONOSTICOS = {
         "humedad_pct": 94.0,
         "viento_ms": 1.9,
         "viento_dir_deg": 291.0,
-        "racha_ms": 3.4,
-        "presion_hpa": 1012.1,
+        "racha_ms": 3.8,
+        "presion_hpa": 1011.9,
         "precip_mm": 0.0
       },
       {
@@ -1820,7 +1820,7 @@ var PRONOSTICOS = {
         "humedad_pct": 93.0,
         "viento_ms": 2.0,
         "viento_dir_deg": 312.0,
-        "racha_ms": 3.1,
+        "racha_ms": 3.3,
         "presion_hpa": 1012.0,
         "precip_mm": 0.0
       },
@@ -1831,8 +1831,8 @@ var PRONOSTICOS = {
         "humedad_pct": 94.0,
         "viento_ms": 3.2,
         "viento_dir_deg": 319.0,
-        "racha_ms": 3.9,
-        "presion_hpa": 1011.6,
+        "racha_ms": 4.1,
+        "presion_hpa": 1011.7,
         "precip_mm": 0.0
       },
       {
@@ -1843,7 +1843,7 @@ var PRONOSTICOS = {
         "viento_ms": 3.7,
         "viento_dir_deg": 338.0,
         "racha_ms": 4.4,
-        "presion_hpa": 1011.0,
+        "presion_hpa": 1010.9,
         "precip_mm": 0.0
       },
       {
@@ -1854,7 +1854,7 @@ var PRONOSTICOS = {
         "viento_ms": 3.8,
         "viento_dir_deg": 316.0,
         "racha_ms": 4.5,
-        "presion_hpa": 1010.3,
+        "presion_hpa": 1010.2,
         "precip_mm": 0.0
       },
       {
@@ -1876,7 +1876,7 @@ var PRONOSTICOS = {
         "viento_ms": 3.8,
         "viento_dir_deg": 326.0,
         "racha_ms": 4.5,
-        "presion_hpa": 1009.8,
+        "presion_hpa": 1009.7,
         "precip_mm": 0.0
       },
       {
@@ -1897,8 +1897,8 @@ var PRONOSTICOS = {
         "humedad_pct": 87.0,
         "viento_ms": 3.1,
         "viento_dir_deg": 318.0,
-        "racha_ms": 3.9,
-        "presion_hpa": 1010.4,
+        "racha_ms": 3.7,
+        "presion_hpa": 1010.6,
         "precip_mm": 0.0
       },
       {
@@ -1908,8 +1908,8 @@ var PRONOSTICOS = {
         "humedad_pct": 89.0,
         "viento_ms": 2.6,
         "viento_dir_deg": 323.0,
-        "racha_ms": 4.5,
-        "presion_hpa": 1011.0,
+        "racha_ms": 3.8,
+        "presion_hpa": 1011.2,
         "precip_mm": 0.0
       },
       {
@@ -1919,8 +1919,8 @@ var PRONOSTICOS = {
         "humedad_pct": 83.0,
         "viento_ms": 2.2,
         "viento_dir_deg": 319.0,
-        "racha_ms": 4.8,
-        "presion_hpa": 1011.5,
+        "racha_ms": 4.6,
+        "presion_hpa": 1011.7,
         "precip_mm": 0.0
       },
       {
@@ -1931,7 +1931,7 @@ var PRONOSTICOS = {
         "viento_ms": 1.5,
         "viento_dir_deg": 306.0,
         "racha_ms": 6.6,
-        "presion_hpa": 1011.7,
+        "presion_hpa": 1011.9,
         "precip_mm": 0.0
       },
       {
@@ -1941,8 +1941,8 @@ var PRONOSTICOS = {
         "humedad_pct": 60.0,
         "viento_ms": 1.1,
         "viento_dir_deg": 45.0,
-        "racha_ms": 7.3,
-        "presion_hpa": 1011.4,
+        "racha_ms": 7.6,
+        "presion_hpa": 1011.7,
         "precip_mm": 0.0
       },
       {
@@ -1952,8 +1952,8 @@ var PRONOSTICOS = {
         "humedad_pct": 62.0,
         "viento_ms": 3.2,
         "viento_dir_deg": 96.0,
-        "racha_ms": 7.3,
-        "presion_hpa": 1010.7,
+        "racha_ms": 7.4,
+        "presion_hpa": 1011.0,
         "precip_mm": 0.0
       },
       {
@@ -1964,7 +1964,7 @@ var PRONOSTICOS = {
         "viento_ms": 4.3,
         "viento_dir_deg": 113.0,
         "racha_ms": 7.3,
-        "presion_hpa": 1009.5,
+        "presion_hpa": 1009.8,
         "precip_mm": 0.0
       },
       {
@@ -1974,8 +1974,8 @@ var PRONOSTICOS = {
         "humedad_pct": 74.0,
         "viento_ms": 4.4,
         "viento_dir_deg": 128.0,
-        "racha_ms": 7.4,
-        "presion_hpa": 1008.4,
+        "racha_ms": 7.2,
+        "presion_hpa": 1008.5,
         "precip_mm": 0.0
       },
       {
@@ -1985,8 +1985,8 @@ var PRONOSTICOS = {
         "humedad_pct": 74.0,
         "viento_ms": 3.7,
         "viento_dir_deg": 149.0,
-        "racha_ms": 7.4,
-        "presion_hpa": 1007.5,
+        "racha_ms": 7.5,
+        "presion_hpa": 1007.7,
         "precip_mm": 0.0
       },
       {
@@ -1996,8 +1996,8 @@ var PRONOSTICOS = {
         "humedad_pct": 67.0,
         "viento_ms": 2.8,
         "viento_dir_deg": 158.0,
-        "racha_ms": 7.5,
-        "presion_hpa": 1006.9,
+        "racha_ms": 8.2,
+        "presion_hpa": 1007.2,
         "precip_mm": 0.0
       },
       {
@@ -2007,8 +2007,8 @@ var PRONOSTICOS = {
         "humedad_pct": 61.0,
         "viento_ms": 3.8,
         "viento_dir_deg": 160.0,
-        "racha_ms": 7.8,
-        "presion_hpa": 1006.9,
+        "racha_ms": 8.7,
+        "presion_hpa": 1007.2,
         "precip_mm": 0.0
       },
       {
@@ -2018,8 +2018,8 @@ var PRONOSTICOS = {
         "humedad_pct": 62.0,
         "viento_ms": 4.7,
         "viento_dir_deg": 171.0,
-        "racha_ms": 8.9,
-        "presion_hpa": 1007.5,
+        "racha_ms": 9.0,
+        "presion_hpa": 1007.7,
         "precip_mm": 0.0
       },
       {
@@ -2029,8 +2029,8 @@ var PRONOSTICOS = {
         "humedad_pct": 74.0,
         "viento_ms": 3.1,
         "viento_dir_deg": 173.0,
-        "racha_ms": 6.8,
-        "presion_hpa": 1008.3,
+        "racha_ms": 8.7,
+        "presion_hpa": 1008.4,
         "precip_mm": 0.1
       },
       {
@@ -2040,8 +2040,8 @@ var PRONOSTICOS = {
         "humedad_pct": 92.0,
         "viento_ms": 1.9,
         "viento_dir_deg": 231.0,
-        "racha_ms": 3.7,
-        "presion_hpa": 1009.1,
+        "racha_ms": 8.4,
+        "presion_hpa": 1009.0,
         "precip_mm": 0.1
       },
       {
@@ -2051,8 +2051,8 @@ var PRONOSTICOS = {
         "humedad_pct": 92.0,
         "viento_ms": 2.0,
         "viento_dir_deg": 289.0,
-        "racha_ms": 4.4,
-        "presion_hpa": 1010.0,
+        "racha_ms": 7.2,
+        "presion_hpa": 1009.9,
         "precip_mm": 0.0
       },
       {
@@ -2062,7 +2062,7 @@ var PRONOSTICOS = {
         "humedad_pct": 92.0,
         "viento_ms": 2.6,
         "viento_dir_deg": 291.0,
-        "racha_ms": 4.3,
+        "racha_ms": 5.5,
         "presion_hpa": 1010.8,
         "precip_mm": 0.0
       },
@@ -2073,7 +2073,7 @@ var PRONOSTICOS = {
         "humedad_pct": 92.0,
         "viento_ms": 4.3,
         "viento_dir_deg": 322.0,
-        "racha_ms": 5.2,
+        "racha_ms": 5.4,
         "presion_hpa": 1011.2,
         "precip_mm": 0.0
       },
@@ -2096,7 +2096,7 @@ var PRONOSTICOS = {
         "viento_ms": 3.9,
         "viento_dir_deg": 325.0,
         "racha_ms": 4.7,
-        "presion_hpa": 1010.5,
+        "presion_hpa": 1010.8,
         "precip_mm": 0.0
       },
       {
@@ -2117,8 +2117,8 @@ var PRONOSTICOS = {
         "humedad_pct": 92.0,
         "viento_ms": 3.6,
         "viento_dir_deg": 318.0,
-        "racha_ms": 4.3,
-        "presion_hpa": 1009.7,
+        "racha_ms": 4.4,
+        "presion_hpa": 1009.5,
         "precip_mm": 0.0
       },
       {
@@ -2128,8 +2128,8 @@ var PRONOSTICOS = {
         "humedad_pct": 92.0,
         "viento_ms": 3.5,
         "viento_dir_deg": 316.0,
-        "racha_ms": 4.4,
-        "presion_hpa": 1009.2,
+        "racha_ms": 4.5,
+        "presion_hpa": 1009.1,
         "precip_mm": 0.0
       },
       {
@@ -2139,8 +2139,8 @@ var PRONOSTICOS = {
         "humedad_pct": 91.0,
         "viento_ms": 3.7,
         "viento_dir_deg": 306.0,
-        "racha_ms": 4.5,
-        "presion_hpa": 1009.1,
+        "racha_ms": 4.4,
+        "presion_hpa": 1008.9,
         "precip_mm": 0.0
       },
       {
@@ -2150,8 +2150,8 @@ var PRONOSTICOS = {
         "humedad_pct": 90.0,
         "viento_ms": 3.4,
         "viento_dir_deg": 318.0,
-        "racha_ms": 4.6,
-        "presion_hpa": 1009.2,
+        "racha_ms": 4.2,
+        "presion_hpa": 1009.3,
         "precip_mm": 0.0
       },
       {
@@ -2161,8 +2161,8 @@ var PRONOSTICOS = {
         "humedad_pct": 89.0,
         "viento_ms": 3.0,
         "viento_dir_deg": 326.0,
-        "racha_ms": 4.8,
-        "presion_hpa": 1009.4,
+        "racha_ms": 4.2,
+        "presion_hpa": 1009.8,
         "precip_mm": 0.0
       },
       {
@@ -2172,8 +2172,8 @@ var PRONOSTICOS = {
         "humedad_pct": 89.0,
         "viento_ms": 2.9,
         "viento_dir_deg": 310.0,
-        "racha_ms": 4.4,
-        "presion_hpa": 1010.1,
+        "racha_ms": 4.7,
+        "presion_hpa": 1010.4,
         "precip_mm": 0.0
       },
       {
@@ -2183,8 +2183,8 @@ var PRONOSTICOS = {
         "humedad_pct": 80.0,
         "viento_ms": 2.9,
         "viento_dir_deg": 307.0,
-        "racha_ms": 4.1,
-        "presion_hpa": 1010.7,
+        "racha_ms": 4.6,
+        "presion_hpa": 1010.9,
         "precip_mm": 0.0
       },
       {
@@ -2194,7 +2194,7 @@ var PRONOSTICOS = {
         "humedad_pct": 65.0,
         "viento_ms": 1.8,
         "viento_dir_deg": 308.0,
-        "racha_ms": 5.2,
+        "racha_ms": 6.9,
         "presion_hpa": 1011.1,
         "precip_mm": 0.0
       },
@@ -2206,7 +2206,7 @@ var PRONOSTICOS = {
         "viento_ms": 1.4,
         "viento_dir_deg": 17.0,
         "racha_ms": 6.0,
-        "presion_hpa": 1010.8,
+        "presion_hpa": 1010.9,
         "precip_mm": 0.0
       },
       {
@@ -2217,7 +2217,7 @@ var PRONOSTICOS = {
         "viento_ms": 2.5,
         "viento_dir_deg": 91.0,
         "racha_ms": 5.6,
-        "presion_hpa": 1010.0,
+        "presion_hpa": 1010.1,
         "precip_mm": 0.0
       },
       {
@@ -2227,8 +2227,8 @@ var PRONOSTICOS = {
         "humedad_pct": 62.0,
         "viento_ms": 3.9,
         "viento_dir_deg": 116.0,
-        "racha_ms": 4.8,
-        "presion_hpa": 1009.0,
+        "racha_ms": 5.4,
+        "presion_hpa": 1008.8,
         "precip_mm": 0.0
       },
       {
@@ -2239,7 +2239,7 @@ var PRONOSTICOS = {
         "viento_ms": 5.4,
         "viento_dir_deg": 104.0,
         "racha_ms": 6.5,
-        "presion_hpa": 1007.8,
+        "presion_hpa": 1007.6,
         "precip_mm": 0.0
       },
       {
@@ -2249,8 +2249,8 @@ var PRONOSTICOS = {
         "humedad_pct": 58.0,
         "viento_ms": 4.7,
         "viento_dir_deg": 94.0,
-        "racha_ms": 5.6,
-        "presion_hpa": 1006.9,
+        "racha_ms": 6.2,
+        "presion_hpa": 1006.6,
         "precip_mm": 0.0
       },
       {
@@ -2260,8 +2260,8 @@ var PRONOSTICOS = {
         "humedad_pct": 54.0,
         "viento_ms": 4.2,
         "viento_dir_deg": 78.0,
-        "racha_ms": 5.7,
-        "presion_hpa": 1006.4,
+        "racha_ms": 6.1,
+        "presion_hpa": 1006.5,
         "precip_mm": 0.0
       },
       {
@@ -2271,8 +2271,8 @@ var PRONOSTICOS = {
         "humedad_pct": 54.0,
         "viento_ms": 5.2,
         "viento_dir_deg": 68.0,
-        "racha_ms": 7.1,
-        "presion_hpa": 1006.7,
+        "racha_ms": 6.2,
+        "presion_hpa": 1006.6,
         "precip_mm": 0.0
       },
       {
@@ -2282,8 +2282,8 @@ var PRONOSTICOS = {
         "humedad_pct": 57.0,
         "viento_ms": 5.1,
         "viento_dir_deg": 64.0,
-        "racha_ms": 8.1,
-        "presion_hpa": 1007.4,
+        "racha_ms": 7.6,
+        "presion_hpa": 1007.5,
         "precip_mm": 0.2
       },
       {
@@ -2293,8 +2293,8 @@ var PRONOSTICOS = {
         "humedad_pct": 64.0,
         "viento_ms": 3.3,
         "viento_dir_deg": 85.0,
-        "racha_ms": 7.2,
-        "presion_hpa": 1008.1,
+        "racha_ms": 6.0,
+        "presion_hpa": 1008.7,
         "precip_mm": 0.6
       },
       {
@@ -2304,8 +2304,8 @@ var PRONOSTICOS = {
         "humedad_pct": 75.0,
         "viento_ms": 1.2,
         "viento_dir_deg": 86.0,
-        "racha_ms": 3.5,
-        "presion_hpa": 1009.2,
+        "racha_ms": 2.8,
+        "presion_hpa": 1009.7,
         "precip_mm": 0.9
       },
       {
@@ -2315,8 +2315,8 @@ var PRONOSTICOS = {
         "humedad_pct": 77.0,
         "viento_ms": 0.6,
         "viento_dir_deg": 324.0,
-        "racha_ms": 2.3,
-        "presion_hpa": 1009.9,
+        "racha_ms": 2.0,
+        "presion_hpa": 1010.3,
         "precip_mm": 0.0
       },
       {
@@ -2326,8 +2326,8 @@ var PRONOSTICOS = {
         "humedad_pct": 79.0,
         "viento_ms": 0.6,
         "viento_dir_deg": 287.0,
-        "racha_ms": 2.7,
-        "presion_hpa": 1010.7,
+        "racha_ms": 1.8,
+        "presion_hpa": 1010.8,
         "precip_mm": 0.0
       },
       {
@@ -2338,7 +2338,7 @@ var PRONOSTICOS = {
         "viento_ms": 2.5,
         "viento_dir_deg": 278.0,
         "racha_ms": 3.0,
-        "presion_hpa": 1011.0,
+        "presion_hpa": 1011.1,
         "precip_mm": 0.0
       },
       {
@@ -2348,8 +2348,8 @@ var PRONOSTICOS = {
         "humedad_pct": 79.0,
         "viento_ms": 1.4,
         "viento_dir_deg": 321.0,
-        "racha_ms": 2.3,
-        "presion_hpa": 1010.9,
+        "racha_ms": 2.1,
+        "presion_hpa": 1010.8,
         "precip_mm": 0.2
       },
       {
@@ -2360,7 +2360,7 @@ var PRONOSTICOS = {
         "viento_ms": 2.5,
         "viento_dir_deg": 302.0,
         "racha_ms": 3.0,
-        "presion_hpa": 1010.0,
+        "presion_hpa": 1010.3,
         "precip_mm": 0.0
       },
       {
@@ -2382,7 +2382,7 @@ var PRONOSTICOS = {
         "viento_ms": 3.6,
         "viento_dir_deg": 302.0,
         "racha_ms": 4.3,
-        "presion_hpa": 1008.8,
+        "presion_hpa": 1009.4,
         "precip_mm": 0.0
       },
       {
@@ -2393,7 +2393,7 @@ var PRONOSTICOS = {
         "viento_ms": 3.9,
         "viento_dir_deg": 310.0,
         "racha_ms": 4.6,
-        "presion_hpa": 1008.9,
+        "presion_hpa": 1009.3,
         "precip_mm": 0.0
       },
       {
@@ -2404,7 +2404,7 @@ var PRONOSTICOS = {
         "viento_ms": 3.2,
         "viento_dir_deg": 316.0,
         "racha_ms": 3.9,
-        "presion_hpa": 1008.7,
+        "presion_hpa": 1009.2,
         "precip_mm": 0.0
       },
       {
@@ -2415,7 +2415,7 @@ var PRONOSTICOS = {
         "viento_ms": 3.0,
         "viento_dir_deg": 303.0,
         "racha_ms": 3.7,
-        "presion_hpa": 1009.1,
+        "presion_hpa": 1009.3,
         "precip_mm": 0.5
       },
       {
@@ -2426,7 +2426,7 @@ var PRONOSTICOS = {
         "viento_ms": 2.6,
         "viento_dir_deg": 293.0,
         "racha_ms": 3.2,
-        "presion_hpa": 1009.7,
+        "presion_hpa": 1009.9,
         "precip_mm": 0.2
       }
     ]
