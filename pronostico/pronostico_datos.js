@@ -1,5 +1,5 @@
 // Generado automáticamente por generar_datos_app.py -- no editar a mano.
-var PRONOSTICO_GENERADO = "2026-10-12T11:04-06:00";
+var PRONOSTICO_GENERADO = "2026-10-12T13:15-06:00";
 var PRONOSTICOS = {
   "salina_cruz": {
     "nombre": "Salina Cruz",
@@ -158,7 +158,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 140.0,
         "racha_ms": 2.6,
         "presion_hpa": 1012.4,
-        "precip_mm": 0.1
+        "precip_mm": 0.0
       },
       {
         "tiempo": "2026-10-13T02:00:00Z",
@@ -169,7 +169,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 194.0,
         "racha_ms": 3.1,
         "presion_hpa": 1013.5,
-        "precip_mm": 0.2
+        "precip_mm": 0.0
       },
       {
         "tiempo": "2026-10-13T03:00:00Z",
@@ -180,7 +180,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 251.0,
         "racha_ms": 3.5,
         "presion_hpa": 1014.3,
-        "precip_mm": 0.1
+        "precip_mm": 0.0
       },
       {
         "tiempo": "2026-10-13T04:00:00Z",
@@ -410,8 +410,8 @@ var PRONOSTICOS = {
         "viento_ms": 2.0,
         "viento_dir_deg": 132.0,
         "racha_ms": 7.3,
-        "presion_hpa": 1010.7,
-        "precip_mm": 0.2
+        "presion_hpa": 1010.8,
+        "precip_mm": 0.1
       },
       {
         "tiempo": "2026-10-14T01:00:00Z",
@@ -675,7 +675,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 44.0,
         "racha_ms": 7.7,
         "presion_hpa": 1010.5,
-        "precip_mm": 0.3
+        "precip_mm": 0.6
       },
       {
         "tiempo": "2026-10-15T01:00:00Z",
@@ -686,7 +686,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 54.0,
         "racha_ms": 3.8,
         "presion_hpa": 1011.7,
-        "precip_mm": 0.6
+        "precip_mm": 0.9
       },
       {
         "tiempo": "2026-10-15T02:00:00Z",
@@ -697,7 +697,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 304.0,
         "racha_ms": 2.5,
         "presion_hpa": 1012.4,
-        "precip_mm": 0.1
+        "precip_mm": 0.0
       },
       {
         "tiempo": "2026-10-15T03:00:00Z",
@@ -730,7 +730,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 338.0,
         "racha_ms": 2.5,
         "presion_hpa": 1013.4,
-        "precip_mm": 0.0
+        "precip_mm": 0.2
       },
       {
         "tiempo": "2026-10-15T06:00:00Z",
@@ -796,7 +796,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 331.0,
         "racha_ms": 2.4,
         "presion_hpa": 1011.3,
-        "precip_mm": 0.0
+        "precip_mm": 0.5
       },
       {
         "tiempo": "2026-10-15T12:00:00Z",
@@ -807,7 +807,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 322.0,
         "racha_ms": 2.8,
         "presion_hpa": 1011.8,
-        "precip_mm": 0.0
+        "precip_mm": 0.2
       }
     ]
   },
@@ -957,7 +957,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 185.0,
         "racha_ms": 9.1,
         "presion_hpa": 1009.0,
-        "precip_mm": 0.5
+        "precip_mm": 1.2
       },
       {
         "tiempo": "2026-10-13T01:00:00Z",
@@ -968,7 +968,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 184.0,
         "racha_ms": 7.7,
         "presion_hpa": 1010.1,
-        "precip_mm": 2.1
+        "precip_mm": 1.5
       },
       {
         "tiempo": "2026-10-13T02:00:00Z",
@@ -979,7 +979,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 197.0,
         "racha_ms": 6.4,
         "presion_hpa": 1011.1,
-        "precip_mm": 0.7
+        "precip_mm": 0.6
       },
       {
         "tiempo": "2026-10-13T03:00:00Z",
@@ -1023,7 +1023,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 85.0,
         "racha_ms": 5.6,
         "presion_hpa": 1011.3,
-        "precip_mm": 0.4
+        "precip_mm": 0.0
       },
       {
         "tiempo": "2026-10-13T07:00:00Z",
@@ -1034,7 +1034,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 8.0,
         "racha_ms": 5.4,
         "presion_hpa": 1010.8,
-        "precip_mm": 0.1
+        "precip_mm": 0.0
       },
       {
         "tiempo": "2026-10-13T08:00:00Z",
@@ -1221,7 +1221,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 229.0,
         "racha_ms": 9.0,
         "presion_hpa": 1008.3,
-        "precip_mm": 0.7
+        "precip_mm": 0.0
       },
       {
         "tiempo": "2026-10-14T01:00:00Z",
@@ -1232,7 +1232,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 227.0,
         "racha_ms": 8.7,
         "presion_hpa": 1009.3,
-        "precip_mm": 0.7
+        "precip_mm": 0.3
       },
       {
         "tiempo": "2026-10-14T02:00:00Z",
@@ -1243,7 +1243,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 187.0,
         "racha_ms": 7.8,
         "presion_hpa": 1010.2,
-        "precip_mm": 0.8
+        "precip_mm": 0.9
       },
       {
         "tiempo": "2026-10-14T03:00:00Z",
@@ -1254,7 +1254,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 137.0,
         "racha_ms": 7.0,
         "presion_hpa": 1010.9,
-        "precip_mm": 0.9
+        "precip_mm": 1.2
       },
       {
         "tiempo": "2026-10-14T04:00:00Z",
@@ -1265,7 +1265,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 122.0,
         "racha_ms": 6.5,
         "presion_hpa": 1011.1,
-        "precip_mm": 0.3
+        "precip_mm": 0.5
       },
       {
         "tiempo": "2026-10-14T05:00:00Z",
@@ -1276,7 +1276,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 76.0,
         "racha_ms": 6.8,
         "presion_hpa": 1011.0,
-        "precip_mm": 0.1
+        "precip_mm": 0.0
       },
       {
         "tiempo": "2026-10-14T06:00:00Z",
@@ -1287,7 +1287,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 22.0,
         "racha_ms": 6.4,
         "presion_hpa": 1010.4,
-        "precip_mm": 0.0
+        "precip_mm": 0.8
       },
       {
         "tiempo": "2026-10-14T07:00:00Z",
@@ -1452,7 +1452,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 226.0,
         "racha_ms": 4.4,
         "presion_hpa": 1007.0,
-        "precip_mm": 0.6
+        "precip_mm": 0.4
       },
       {
         "tiempo": "2026-10-14T22:00:00Z",
@@ -1463,7 +1463,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 235.0,
         "racha_ms": 4.2,
         "presion_hpa": 1007.1,
-        "precip_mm": 0.2
+        "precip_mm": 0.4
       },
       {
         "tiempo": "2026-10-14T23:00:00Z",
@@ -1474,7 +1474,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 263.0,
         "racha_ms": 4.6,
         "presion_hpa": 1007.6,
-        "precip_mm": 0.2
+        "precip_mm": 0.1
       },
       {
         "tiempo": "2026-10-15T00:00:00Z",
@@ -1496,7 +1496,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 357.0,
         "racha_ms": 3.4,
         "presion_hpa": 1009.1,
-        "precip_mm": 0.0
+        "precip_mm": 0.3
       },
       {
         "tiempo": "2026-10-15T02:00:00Z",
@@ -1507,7 +1507,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 42.0,
         "racha_ms": 3.7,
         "presion_hpa": 1009.9,
-        "precip_mm": 0.0
+        "precip_mm": 0.5
       },
       {
         "tiempo": "2026-10-15T03:00:00Z",
@@ -1518,7 +1518,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 47.0,
         "racha_ms": 2.8,
         "presion_hpa": 1010.6,
-        "precip_mm": 1.1
+        "precip_mm": 3.1
       },
       {
         "tiempo": "2026-10-15T04:00:00Z",
@@ -1540,7 +1540,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 54.0,
         "racha_ms": 2.2,
         "presion_hpa": 1010.7,
-        "precip_mm": 1.3
+        "precip_mm": 0.6
       },
       {
         "tiempo": "2026-10-15T06:00:00Z",
@@ -1551,7 +1551,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 31.0,
         "racha_ms": 2.3,
         "presion_hpa": 1010.1,
-        "precip_mm": 1.3
+        "precip_mm": 1.1
       },
       {
         "tiempo": "2026-10-15T07:00:00Z",
@@ -1562,7 +1562,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 12.0,
         "racha_ms": 2.6,
         "presion_hpa": 1009.7,
-        "precip_mm": 1.5
+        "precip_mm": 0.8
       },
       {
         "tiempo": "2026-10-15T08:00:00Z",
@@ -1573,7 +1573,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 0.0,
         "racha_ms": 2.5,
         "presion_hpa": 1009.0,
-        "precip_mm": 1.6
+        "precip_mm": 1.4
       },
       {
         "tiempo": "2026-10-15T09:00:00Z",
@@ -1584,7 +1584,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 348.0,
         "racha_ms": 2.8,
         "presion_hpa": 1008.9,
-        "precip_mm": 1.2
+        "precip_mm": 2.4
       },
       {
         "tiempo": "2026-10-15T10:00:00Z",
@@ -1595,7 +1595,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 348.0,
         "racha_ms": 2.8,
         "presion_hpa": 1008.8,
-        "precip_mm": 0.4
+        "precip_mm": 2.2
       },
       {
         "tiempo": "2026-10-15T11:00:00Z",
@@ -1606,7 +1606,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 2.0,
         "racha_ms": 2.3,
         "presion_hpa": 1009.0,
-        "precip_mm": 0.7
+        "precip_mm": 0.6
       },
       {
         "tiempo": "2026-10-15T12:00:00Z",
@@ -1617,7 +1617,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 11.0,
         "racha_ms": 3.1,
         "presion_hpa": 1009.4,
-        "precip_mm": 0.1
+        "precip_mm": 0.0
       }
     ]
   },
@@ -1778,7 +1778,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 172.0,
         "racha_ms": 3.1,
         "presion_hpa": 1009.9,
-        "precip_mm": 0.1
+        "precip_mm": 0.0
       },
       {
         "tiempo": "2026-10-13T02:00:00Z",
@@ -1789,7 +1789,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 215.0,
         "racha_ms": 2.9,
         "presion_hpa": 1011.0,
-        "precip_mm": 0.2
+        "precip_mm": 0.0
       },
       {
         "tiempo": "2026-10-13T03:00:00Z",
@@ -1800,7 +1800,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 259.0,
         "racha_ms": 3.3,
         "presion_hpa": 1011.8,
-        "precip_mm": 0.1
+        "precip_mm": 0.0
       },
       {
         "tiempo": "2026-10-13T04:00:00Z",
@@ -2031,7 +2031,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 173.0,
         "racha_ms": 6.8,
         "presion_hpa": 1008.3,
-        "precip_mm": 0.2
+        "precip_mm": 0.1
       },
       {
         "tiempo": "2026-10-14T01:00:00Z",
@@ -2295,7 +2295,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 85.0,
         "racha_ms": 7.2,
         "presion_hpa": 1008.1,
-        "precip_mm": 0.3
+        "precip_mm": 0.6
       },
       {
         "tiempo": "2026-10-15T01:00:00Z",
@@ -2306,7 +2306,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 86.0,
         "racha_ms": 3.5,
         "presion_hpa": 1009.2,
-        "precip_mm": 0.6
+        "precip_mm": 0.9
       },
       {
         "tiempo": "2026-10-15T02:00:00Z",
@@ -2317,7 +2317,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 324.0,
         "racha_ms": 2.3,
         "presion_hpa": 1009.9,
-        "precip_mm": 0.1
+        "precip_mm": 0.0
       },
       {
         "tiempo": "2026-10-15T03:00:00Z",
@@ -2350,7 +2350,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 321.0,
         "racha_ms": 2.3,
         "presion_hpa": 1010.9,
-        "precip_mm": 0.0
+        "precip_mm": 0.2
       },
       {
         "tiempo": "2026-10-15T06:00:00Z",
@@ -2416,7 +2416,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 303.0,
         "racha_ms": 3.7,
         "presion_hpa": 1009.1,
-        "precip_mm": 0.0
+        "precip_mm": 0.5
       },
       {
         "tiempo": "2026-10-15T12:00:00Z",
@@ -2427,7 +2427,7 @@ var PRONOSTICOS = {
         "viento_dir_deg": 293.0,
         "racha_ms": 3.2,
         "presion_hpa": 1009.7,
-        "precip_mm": 0.0
+        "precip_mm": 0.2
       }
     ]
   }
