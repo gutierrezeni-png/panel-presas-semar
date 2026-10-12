@@ -622,6 +622,32 @@ function iniciar() {
 
 iniciar();
 
+// ===== Etiqueta visible: cuándo se generó el pronóstico y cuándo se revisó =====
+// Sirve para saber de un vistazo que la app está viva aunque los datos no
+// hayan cambiado. "Revisado" cambia cada vez que se vuelven a leer los datos.
+(function crearEtiquetaEstado() {
+  const div = document.createElement('div');
+  div.id = 'estado-actualizacion';
+  div.style.cssText = 'position:fixed;right:12px;bottom:12px;z-index:9999;' +
+    'background:rgba(15,30,40,.92);border:1px solid rgba(255,255,255,.18);border-radius:8px;' +
+    'padding:6px 10px;font:12px Arial,sans-serif;color:#dfe9ef;box-shadow:0 1px 4px rgba(0,0,0,.35)';
+  div.innerHTML = 'Pronóstico generado: <b id="hora-generado">--</b><br>' +
+    'Revisado: <b id="hora-revision">--</b> · se actualiza cada 15 min';
+  document.body.appendChild(div);
+})();
+
+function actualizarEtiquetaEstado() {
+  const fmt = { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit', timeZone: ZONA_HORARIA };
+  let generado = '--';
+  if (typeof PRONOSTICO_GENERADO !== 'undefined') {
+    generado = new Date(PRONOSTICO_GENERADO).toLocaleString('es-MX', fmt);
+  }
+  document.getElementById('hora-generado').textContent = generado;
+  document.getElementById('hora-revision').textContent =
+    new Date().toLocaleTimeString('es-MX', { hour: '2-digit', minute: '2-digit', timeZone: ZONA_HORARIA });
+}
+actualizarEtiquetaEstado();
+
 // ===== Actualización automática mientras la app está abierta =====
 // Cada 5 minutos: mueve la lectura principal y la fila resaltada a la hora actual.
 // Cada 15 minutos: vuelve a leer pronostico_datos.js (que la tarea programada
@@ -639,6 +665,7 @@ function recargarDatos() {
   script.src = 'pronostico_datos.js?t=' + Date.now();   // evita la copia en caché
   script.onload = () => {
     if (typeof PRONOSTICOS !== 'undefined' && PRONOSTICOS[estacionActiva]) renderTodo();
+    actualizarEtiquetaEstado();
   };
   document.body.appendChild(script);
 }
