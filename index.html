@@ -2,7 +2,8 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="refresh" content="300">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <title>PRESAS_EIOS_RN10</title>
 <style>
   :root {
@@ -112,7 +113,7 @@
 <div id="estado-actualizacion" style="max-width:1400px;margin:8px auto 4px;
   background:#eef4f8;border:1px solid #c8d3dc;border-radius:8px;padding:8px 14px;
   font:15px Arial,sans-serif;color:#234;text-align:center">
-  Panel generado: <b>14/10/2026 09:59</b> &nbsp;·&nbsp; Revisado: <b id="hora-revision">--</b>
+  Panel generado: <b>14/10/2026 10:08</b> &nbsp;·&nbsp; Revisado: <b id="hora-revision">--</b>
   &nbsp;·&nbsp; se actualiza cada 10 min
 </div>
 
@@ -142,10 +143,28 @@
   </div>
 
   <div class="pie">
-    Esta página se actualiza sola cada 5 minutos. Para ver el dato más
-    reciente ahora mismo, presiona F5.
+    Panel generado el 14/10/2026 10:08 h.<br>
+    Se actualiza solo cada 5 minutos y al volver a abrir la página en el celular.
   </div>
 </div>
+<script>
+(function () {
+  var INTERVALO = 5 * 60 * 1000;   // 5 minutos
+  var cargada = Date.now();
+  function recargar() {
+    // el ?t= cambia cada vez, así el celular no usa la copia guardada (caché)
+    location.replace(location.pathname + '?t=' + Date.now());
+  }
+  // cada 5 min, solo si la página está en pantalla
+  setInterval(function () { if (!document.hidden) recargar(); }, INTERVALO);
+  // al volver a la pestaña o desbloquear el celular (si pasó más de 1 min)
+  document.addEventListener('visibilitychange', function () {
+    if (!document.hidden && Date.now() - cargada > 60 * 1000) recargar();
+  });
+  // si el navegador restauró la página congelada de su memoria
+  window.addEventListener('pageshow', function (e) { if (e.persisted) recargar(); });
+})();
+</script>
 <!-- AUTORECARGA_PANEL -->
 <script>
 /* Recarga automática del panel mientras está abierto (agregado por
