@@ -1,5 +1,5 @@
 // Generado automáticamente por generar_datos_app.py -- no editar a mano.
-var PRONOSTICO_GENERADO = "2026-11-05T10:29-06:00";
+var PRONOSTICO_GENERADO = "2026-11-05T10:36-06:00";
 var PRONOSTICOS = {
   "salina_cruz": {
     "nombre": "Salina Cruz",
